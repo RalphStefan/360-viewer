@@ -38,7 +38,8 @@ pannellum.viewer('panorama', {
                     "text": "buiten",
                     "sceneId": "scene1"
                 }
-            ]
+            ],
+            "mapPosition": { "x": 100, "y": 100 }
         },
         "b1": {
             "type": "equirectangular",
