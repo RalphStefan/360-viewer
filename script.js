@@ -15,7 +15,8 @@ pannellum.viewer('panorama', {
                     "yaw": 0,
                     "type": "scene",
                     "text": "Next",
-                    "sceneId": "i2"
+                    "sceneId": "i2",
+                    "mapPosition": { "x": 50, "y": 50 } // Voeg de positie op de kaart toe
                 }
             ]
         },
@@ -446,14 +447,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 110,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b9"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": -150,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b13"
@@ -467,7 +468,7 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 120,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Mandelazaal",
                     "sceneId": "mz"
@@ -480,16 +481,16 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": -40,
                     "type": "scene",
                     "text": "aula",
-                    "sceneId": "ma"
+                    "sceneId": "ba"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 40,
                     "type": "scene",
-                    "text": "aula",
+                    "text": "",
                     "sceneId": "b11"
                 }
             ]
@@ -779,3 +780,19 @@ pannellum.viewer('panorama', {
         }
     }
 });
+const viewer = pannellum.viewer('panorama', { 
+    "default": { "firstScene": "scene1", 
+        "sceneFadeDuration": 1000 }, 
+        "scenes": scenes 
+    }); 
+    viewer.on('scenechange', function(sceneId) { 
+        const mapMarker = document.getElementById('map-marker'); 
+        const scene = scenes[sceneId]; if (scene && scene.mapPosition) { 
+            mapMarker.style.left = scene.mapPosition.x + 'px'; 
+            mapMarker.style.top = scene.mapPosition.y + 'px'; 
+        } 
+    }); // Initialiseer de marker positie const initialScene = viewer.getScene(); 
+    const initialMapPosition = scenes[initialScene].mapPosition; 
+    const mapMarker = document.getElementById('map-marker'); 
+    mapMarker.style.left = initialMapPosition.x + 'px'; 
+    mapMarker.style.top = initialMapPosition.y + 'px';
