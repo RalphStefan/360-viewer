@@ -36,7 +36,7 @@ pannellum.viewer('panorama', {
                     "yaw": 180,
                     "type": "scene",
                     "text": "buiten",
-                    "sceneId": "scene1"
+                    "sceneId": "i1"
                 }
             ],
             "mapPosition": { "x": 100, "y": 100 }
