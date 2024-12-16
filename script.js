@@ -122,14 +122,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b5"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b3"
@@ -143,14 +143,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 100,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b6"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b4"
@@ -197,14 +197,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b8"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b6"
@@ -217,14 +217,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b9"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": -90,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b7"
@@ -237,17 +237,24 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": -90,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b10"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 90,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b8"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "aula",
+                    "sceneId": "ba"
                 }
             ]
         },
@@ -257,14 +264,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": -90,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b11"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b9"
@@ -288,6 +295,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b10"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Mandelazaal",
+                    "sceneId": "mz"
                 }
             ]
         },
@@ -331,7 +345,7 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 90,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b12"
