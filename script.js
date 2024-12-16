@@ -324,14 +324,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": -90,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b14"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 90,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b12"
@@ -343,15 +343,15 @@ pannellum.viewer('panorama', {
             "panorama": "images/b14.JPG",
             "hotSpots": [
                 {
-                    "pitch": -10,
-                    "yaw": 20,
+                    "pitch": -90,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b15"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b13"
@@ -364,7 +364,7 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b3"
@@ -372,6 +372,13 @@ pannellum.viewer('panorama', {
                 {
                     "pitch": -10,
                     "yaw": -20,
+                    "type": "scene",
+                    "text": "Back",
+                    "sceneId": "b14"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 90,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b14"
