@@ -8,25 +8,28 @@
         #mini-map {
             position: fixed;
         }
-        #watermark { 
-            position: absolute; 
-            bottom: 10px; 
-            right: 10px; 
-            opacity: 0.5; 
-            z-index: 1000; 
+        #watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.5;
+            z-index: 1000;
         }
     </style>
 </head>
 <body>
-    <div id="panorama" style="width: 100%; height: 500px;"></div>
-    <!-- Mini-map -->
-    <div id="mini-map" style="position: fixed; top: 10px; right: 10px; width: 200px; height: 200px; background-color: rgba(255, 255, 255, 0.3); border: 1px solid #000; z-index: 1000;">
-        <img id="map-image" alt="Map" style="width: 100%; height: 100%;">
-        <div id="map-marker" style="position: absolute; width: 10px; height: 10px; background-color: red; border-radius: 50%;"></div>
+    <div id="panorama" style="width: 100%; height: 500px; position: relative;">
+        <!-- Watermerk -->
+        <div id="watermark">
+            <a href="https://www.oscarromero.nl" target="_blank">
+                <img src="images/logo.png" alt="Watermark" style="width: 100px; height: auto;">
+            </a>
+        </div>
     </div>
-    <!-- Watermerk --> 
-     <div id="watermark" > 
-        <img src="images/logo.png" alt="Watermark" style="width: 100px; height: auto;"> 
+    <!-- Mini-map -->
+    <div id="mini-map" style="position: fixed; top: 10px; right: 10px; width: 200px; height: 200px; background-color: rgba(255, 255, 255, 0.8); border: 1px solid #000; z-index: 1000;">
+        <img id="map-image" src="images/begane_grond.png" alt="Map" style="width: 100%; height: 100%;">
+        <div id="map-marker" style="position: absolute; width: 10px; height: 10px; background-color: red; border-radius: 50%;"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
     <script src="script.js"></script>
