@@ -19,7 +19,7 @@ pannellum.viewer('panorama', {
                     "text": "Next",
                     "sceneId": "i2",
                     "etage":0,
-                    "mapPosition": { "x": 50, "y": 50 } // Voeg de positie op de kaart toe
+                    "mapPosition": { "x": 250, "y": 250 } // Voeg de positie op de kaart toe
                 }
             ]
         },
