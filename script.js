@@ -85,6 +85,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b1"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 10,
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "lg1"
                 }
             ]
         },
@@ -112,6 +119,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b2"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "onderbouw aula",
+                    "sceneId": "oba5"
                 }
             ]
         },
@@ -122,14 +136,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 0,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b5"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 180,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b3"
@@ -275,6 +289,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b9"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "0,49"
                 }
             ]
         },
@@ -369,6 +390,20 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b13"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 70,
+                    "type": "scene",
+                    "text": "handvaardigheid",
+                    "sceneId": "hvl"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "naar boven",
+                    "sceneId": "b5"
                 }
             ]
         },
@@ -399,7 +434,6 @@ pannellum.viewer('panorama', {
                 }
             ]
         },
-
         "m1": {
             "type": "equirectangular",
             "panorama": "images/m1.JPG",
@@ -517,6 +551,73 @@ pannellum.viewer('panorama', {
                 }
             ]
         },
+
+        "lg1": {
+            "type": "equirectangular",
+            "panorama": "images/lg1.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "b2"
+                },                
+                {
+                    "pitch": -10,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "verder",
+                    "sceneId": "lg2"
+                },
+            ]
+        }, 
+        "lg2": {
+            "type": "equirectangular",
+            "panorama": "images/lg2.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "lg1"
+                },                
+                {
+                    "pitch": 10,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "boven",
+                    "sceneId": "e4"
+                },
+            ]
+        }, 
+        "lk": {
+            "type": "equirectangular",
+            "panorama": "images/lk.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -10,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "lg1"
+                },                
+            ]
+        }, 
+        "hvl": {
+            "type": "equirectangular",
+            "panorama": "images/hvl.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": 20,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "b14"
+                },
+            ]
+        },  
         "tuin": {
             "type": "equirectangular",
             "panorama": "images/tuin.JPG",
@@ -528,6 +629,27 @@ pannellum.viewer('panorama', {
                     "text": "terug",
                     "sceneId": "b6"
                 },
+            ]
+        },       
+        "0,49": {
+            "type": "equirectangular",
+            "panorama": "images/0,49.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -170,
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "b10"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "b9"
+                },
+                
             ]
         },
 
@@ -549,6 +671,13 @@ pannellum.viewer('panorama', {
                     "text": "ingang",
                     "sceneId": "b2"
                 },
+                {
+                    "pitch": 20,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "naar boven",
+                    "sceneId": "eoba1"
+                }
                 
             ]
         },
@@ -645,6 +774,28 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "terug",
                     "sceneId": "oba4"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -20,
+                    "type": "scene",
+                    "text": "muzieklokaal",
+                    "sceneId": "ml"
+                }
+                
+            ]
+        },
+        
+        "ml": {
+            "type": "equirectangular",
+            "panorama": "images/ml.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "oba5"
                 },
                 
             ]
@@ -798,6 +949,163 @@ pannellum.viewer('panorama', {
                     "sceneId": "lo3"
                 },
                 
+            ]
+        },
+        "eoba": {
+            "type": "equirectangular",
+            "panorama": "images/eoba.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -30,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "naar beneden",
+                    "sceneId": "oba1"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -45,
+                    "type": "scene",
+                    "text": "verder",
+                    "sceneId": "e1"
+                },
+                
+            ]
+        },
+        "e1": {
+            "type": "equirectangular",
+            "panorama": "images/e1.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "verder",
+                    "sceneId": "e2"
+                },                
+                {
+                    "pitch": -20,
+                    "yaw": -170,
+                    "type": "scene",
+                    "text": "naar beneden",
+                    "sceneId": "b3"
+                },
+                
+            ]
+        },
+        "e2": {
+            "type": "equirectangular",
+            "panorama": "images/e2.JPG",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "verder",
+                    "sceneId": "e3"
+                },                
+                {
+                    "pitch": -10,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "e5"
+                },
+                
+            ]
+        },
+        "e3": {
+            "type": "equirectangular",
+            "panorama": "images/e3.JPG",
+            "hotSpots": [
+
+                {
+                    "pitch": -10,
+                    "yaw": -20,
+                    "type": "scene",
+                    "text": "verder",
+                    "sceneId": "e4"
+                },                
+                {
+                    "pitch": -10,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "e2"
+                },
+                
+            ]
+        },
+        "e4": {
+            "type": "equirectangular",
+            "panorama": "images/e4.JPG",
+            "hotSpots": [
+
+                {
+                    "pitch": -10,
+                    "yaw": -20,
+                    "type": "scene",
+                    "text": "naar beneden",
+                    "sceneId": "lg2"
+                },                
+                {
+                    "pitch": -10,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "e3"
+                },
+                
+            ]
+        },
+        "e5": {
+            "type": "equirectangular",
+            "panorama": "images/e5.JPG",
+            "hotSpots": [
+
+                {
+                    "pitch": -10,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "e2"
+                },                
+                {
+                    "pitch": -10,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "naar beneden",
+                    "sceneId": "b14"
+                },
+                
+            ]
+        },
+        "lpv": {
+            "type": "equirectangular",
+            "panorama": "images/lpv.JPG",
+            "hotSpots": [
+
+                {
+                    "pitch": -10,
+                    "yaw": -20,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "e2"
+                },                
+                {
+                    "pitch": -10,
+                    "yaw": 20,
+                    "type": "scene",
+                    "text": "naar beneden",
+                    "sceneId": "e1"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -160,
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "e5"
+                }
             ]
         }
     }
