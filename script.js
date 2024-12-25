@@ -818,21 +818,21 @@ const scenes= {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 120,
+                    "yaw": 110,
                     "type": "scene",
                     "text": "",
                     "sceneId": "oba5"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -10,
+                    "yaw": -45,
                     "type": "scene",
                     "text": "",
                     "sceneId": "oba3"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 100,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "muzieklokaal",
                     "sceneId": "ml"
@@ -881,7 +881,7 @@ const scenes= {
                     "yaw": 90,
                     "type": "scene",
                     "text": "terug",
-                    "sceneId": "oba5"
+                    "sceneId": "oba4"
                 },
                 
             ]
