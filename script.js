@@ -18,8 +18,6 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "i2",
-                    "etage":0,
-                    "mapPosition": { "x": 250, "y": 250 } // Voeg de positie op de kaart toe
                 }
             ]
         },
@@ -27,7 +25,7 @@ pannellum.viewer('panorama', {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             "etage":0,
-            "mapPosition": { "x": 50, "y": 50 }, // Voeg de positie op de kaart toe
+            "mapPosition": { "x": 250, "y": 250 }, // Voeg de positie op de kaart toe
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -44,7 +42,6 @@ pannellum.viewer('panorama', {
                     "sceneId": "i1"
                 }
             ],
-            "mapPosition": { "x": 100, "y": 100 }
         },
         "b1": {
             "type": "equirectangular",
