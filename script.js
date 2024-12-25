@@ -5,7 +5,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 50, 'y': 50 },
+            'mapPosition': { 'x': 10, 'y': 10 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1244,26 +1244,30 @@ const scenes= {
             ]
         }
     };
-    const viewer = pannellum.viewer('panorama', { 
-        'default': { 
-            'firstScene': 'i1', 
-            'sceneFadeDuration': 1000 
-        }, 
-        'scenes': scenes 
-    });
+// Initialiseer de viewer met de scènes
+const viewer = pannellum.viewer('panorama', {
+    'default': {
+        'firstScene': 'i1', // Eerste scène die wordt geladen
+        'sceneFadeDuration': 1000 // Duur van de scène overgang in ms
+    },
+    'scenes': scenes // Toevoegen van de scènes aan de viewer
+});
 
+// Functie om de kaart en marker bij te werken bij scène verandering
 viewer.on('scenechange', function(sceneId) {
     const mapMarker = document.getElementById('map-marker');
     const mapImage = document.getElementById('map-image');
     const scene = scenes[sceneId];
 
     if (scene) {
+        // Update de plattegrond op basis van de etage
         if (scene.etage === 0) {
             mapImage.src = 'images/begane_grond.png';
         } else if (scene.etage === 1) {
             mapImage.src = 'images/eerste_etage.png';
         }
 
+        // Update de marker positie op de plattegrond
         if (scene.mapPosition) {
             mapMarker.style.left = scene.mapPosition.x + 'px';
             mapMarker.style.top = scene.mapPosition.y + 'px';
@@ -1271,18 +1275,20 @@ viewer.on('scenechange', function(sceneId) {
     }
 });
 
-// Initialiseer de marker positie
+// Initialiseer de marker positie bij het laden van de pagina
 const initialScene = viewer.getScene();
 const initialMapPosition = scenes[initialScene].mapPosition;
 const initialEtage = scenes[initialScene].etage;
 const mapMarker = document.getElementById('map-marker');
 const mapImage = document.getElementById('map-image');
 
+// Update de plattegrond op basis van de initiële etage
 if (initialEtage === 0) {
     mapImage.src = 'images/begane_grond.png';
 } else if (initialEtage === 1) {
     mapImage.src = 'images/eerste_etage.png';
 }
 
+// Update de marker positie op de plattegrond
 mapMarker.style.left = initialMapPosition.x + 'px';
 mapMarker.style.top = initialMapPosition.y + 'px';
