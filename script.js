@@ -5,7 +5,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 0, 'y': 0 },
+            'mapPosition': { 'x': 86, 'y': 184 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -20,7 +20,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 20, 'y': 30 },
+            'mapPosition': { 'x': 86, 'y': 171 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -42,7 +42,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 30, 'y': 40 },
+            'mapPosition': { 'x': 90, 'y': 165 },
             "hotSpots": [
                 {
                     "pitch": -10,
