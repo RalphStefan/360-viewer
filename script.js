@@ -92,6 +92,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "",
                     "sceneId": "lg1"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -160,
+                    "type": "scene",
+                    "text": "naar boven",
+                    "sceneId": "e1"
                 }
             ]
         },
@@ -126,10 +133,16 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "onderbouw aula",
                     "sceneId": "oba5"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "naar boven",
+                    "sceneId": "e1"
                 }
             ]
         },
-
         "b4": {
             "type": "equirectangular",
             "panorama": "images/b4.JPG",
