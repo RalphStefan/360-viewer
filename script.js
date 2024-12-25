@@ -9,13 +9,8 @@ pannellum.viewer('panorama', {
         "i1": {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
-<<<<<<< HEAD
             'etage': 1, 
             'mapPosition': { 'x': 50, 'y': 50 },
-=======
-            "etage":0,
-            "mapPosition": { "x": 0, "y": 0 }, // Voeg de positie op de kaart toe
->>>>>>> 0b54eb9a5b9fa782756bedcc62ccc21622ddf5f4
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -29,13 +24,8 @@ pannellum.viewer('panorama', {
         "i2": {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
-<<<<<<< HEAD
             'etage': 0, 
             'mapPosition': { 'x': 150, 'y': 150 },
-=======
-            "etage":0,
-            "mapPosition": { "x": 250, "y": 250 }, // Voeg de positie op de kaart toe
->>>>>>> 0b54eb9a5b9fa782756bedcc62ccc21622ddf5f4
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1015,8 +1005,6 @@ pannellum.viewer('panorama', {
         "e1": {
             "type": "equirectangular",
             "panorama": "images/e1.JPG",
-            "etage":1,
-            "mapPosition": { "x": 50, "y": 50 }, // Voeg de positie op de kaart toe
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1173,35 +1161,45 @@ pannellum.viewer('panorama', {
         }
     }
 });
-// Definieer de etage en positie variabelen
-let etage = 0; // 0 voor begane grond, 1 voor eerste etage
-let positie = { x: 100, y: 100 };
+const viewer = pannellum.viewer('panorama', {
+    'default': {
+        'firstScene': 'i1',
+        'sceneFadeDuration': 1000
+    },
+    'scenes': scenes
+});
 
-// Functie om de plattegrond te wijzigen
-function updateMap() {
-    const mapImage = document.getElementById('map-image');
+viewer.on('scenechange', function(sceneId) {
     const mapMarker = document.getElementById('map-marker');
+    const mapImage = document.getElementById('map-image');
+    const scene = scenes[sceneId];
 
-    if (etage === 0) {
-        mapImage.src = 'images/begane_grond.png';
-    } else if (etage === 1) {
-        mapImage.src = 'images/eerste_etage.png';
+    if (scene) {
+        if (scene.etage === 0) {
+            mapImage.src = 'images/begane_grond.png';
+        } else if (scene.etage === 1) {
+            mapImage.src = 'images/eerste_etage.png';
+        }
+
+        if (scene.mapPosition) {
+            mapMarker.style.left = scene.mapPosition.x + 'px';
+            mapMarker.style.top = scene.mapPosition.y + 'px';
+        }
     }
+});
 
-    // Update de positie van de marker
-    mapMarker.style.left = `${positie.x}px`;
-    mapMarker.style.top = `${positie.y}px`;
+// Initialiseer de marker positie
+const initialScene = viewer.getScene();
+const initialMapPosition = scenes[initialScene].mapPosition;
+const initialEtage = scenes[initialScene].etage;
+const mapMarker = document.getElementById('map-marker');
+const mapImage = document.getElementById('map-image');
+
+if (initialEtage === 0) {
+    mapImage.src = 'images/begane_grond.png';
+} else if (initialEtage === 1) {
+    mapImage.src = 'images/eerste_etage.png';
 }
 
-// Voorbeeld van het wijzigen van de etage en positie
-function changeFloor(newEtage, newPositie) {
-    etage = newEtage;
-    positie = newPositie;
-    updateMap();
-}
-
-// Initialiseer de kaart
-updateMap();
-
-// Voorbeeld van het wijzigen van de etage en positie
-// changeFloor(1, { x: 150, y: 150 });
+mapMarker.style.left = initialMapPosition.x + 'px';
+mapMarker.style.top = initialMapPosition.y + 'px';
