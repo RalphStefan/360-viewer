@@ -1,11 +1,6 @@
 // script.js
 
-pannellum.viewer('panorama', {
-    "default": {
-        "firstScene": "i1",
-        "sceneFadeDuration": 1000
-    },
-    "scenes": {
+const scenes= {
         "i1": {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
@@ -1159,16 +1154,15 @@ pannellum.viewer('panorama', {
                 }
             ]
         }
-    }
-});
-const viewer = pannellum.viewer('panorama', {
-    'default': {
-        'firstScene': 'i1',
-        'sceneFadeDuration': 1000
-    },
-    'scenes': scenes
-});
-
+    };
+    const viewer = pannellum.viewer('panorama', { 
+        'default': { 
+            'firstScene': 'i1', 
+            'sceneFadeDuration': 1000 
+        }, 
+        'scenes': scenes 
+    });
+    
 viewer.on('scenechange', function(sceneId) {
     const mapMarker = document.getElementById('map-marker');
     const mapImage = document.getElementById('map-image');
