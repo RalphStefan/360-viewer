@@ -9,7 +9,7 @@ pannellum.viewer('panorama', {
         "i1": {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
-            'etage': 1, 
+            'etage': 0, 
             'mapPosition': { 'x': 50, 'y': 50 },
             "hotSpots": [
                 {
@@ -24,7 +24,7 @@ pannellum.viewer('panorama', {
         "i2": {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
-            'etage': 0, 
+            'etage': 1, 
             'mapPosition': { 'x': 250, 'y': 250 },
             "hotSpots": [
                 {
