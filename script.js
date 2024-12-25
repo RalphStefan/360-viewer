@@ -25,7 +25,7 @@ pannellum.viewer('panorama', {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 150, 'y': 150 },
+            'mapPosition': { 'x': 250, 'y': 250 },
             "hotSpots": [
                 {
                     "pitch": -10,
