@@ -88,14 +88,14 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 10,
+                    "yaw": 20,
                     "type": "scene",
-                    "text": "",
+                    "text": "leraren",
                     "sceneId": "lg1"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -160,
+                    "yaw": -150,
                     "type": "scene",
                     "text": "naar boven",
                     "sceneId": "e1"
@@ -129,14 +129,14 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 180,
+                    "yaw": -170,
                     "type": "scene",
                     "text": "onderbouw aula",
                     "sceneId": "oba5"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 170,
+                    "yaw": 165,
                     "type": "scene",
                     "text": "naar boven",
                     "sceneId": "e1"
@@ -197,14 +197,14 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -35,
+                    "yaw": -30,
                     "type": "scene",
                     "text": "mediatheek",
                     "sceneId": "m1"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -110,
+                    "yaw": -120,
                     "type": "scene",
                     "text": "buiten",
                     "sceneId": "tuin"
@@ -251,7 +251,7 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -90,
+                    "yaw": -85,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b7"
@@ -264,7 +264,7 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -90,
+                    "yaw": -100,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b10"
@@ -278,7 +278,7 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 180,
+                    "yaw": 175,
                     "type": "scene",
                     "text": "aula",
                     "sceneId": "ba"
@@ -305,7 +305,7 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 170,
+                    "yaw": 160,
                     "type": "scene",
                     "text": "",
                     "sceneId": "0,49"
@@ -318,16 +318,16 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 180,
                     "type": "scene",
-                    "text": "Next",
+                    "text": "",
                     "sceneId": "b12"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "b10"
                 },
                 {
@@ -345,7 +345,7 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b13"
@@ -354,14 +354,14 @@ pannellum.viewer('panorama', {
                     "pitch": -10,
                     "yaw": 100,
                     "type": "scene",
-                    "text": "aula",
+                    "text": "bovenbouw aula",
                     "sceneId": "ba"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "b11"
                 }
             ]
@@ -391,29 +391,29 @@ pannellum.viewer('panorama', {
             "panorama": "images/b14.JPG",
             "hotSpots": [
                 {
-                    "pitch": -90,
+                    "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "Next",
+                    "text": "",
                     "sceneId": "b15"
                 },
                 {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "b13"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 70,
+                    "yaw": 60,
                     "type": "scene",
                     "text": "handvaardigheid",
                     "sceneId": "hvl"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 90,
+                    "yaw": 95,
                     "type": "scene",
                     "text": "naar boven",
                     "sceneId": "b5"
@@ -426,24 +426,24 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 180,
+                    "yaw": 10,
                     "type": "scene",
-                    "text": "Next",
+                    "text": "",
                     "sceneId": "b3"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": -10,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "180",
                     "sceneId": "b14"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 90,
+                    "yaw": -10,
                     "type": "scene",
-                    "text": "Back",
-                    "sceneId": "b14"
+                    "text": "",
+                    "sceneId": "b4"
                 }
             ]
         },
@@ -453,14 +453,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 150,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "next",
                     "sceneId": "m2"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 0,
+                    "yaw": -80,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "b6"
@@ -474,7 +474,7 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 150,
+                    "yaw": 170,
                     "type": "scene",
                     "text": "next",
                     "sceneId": "m3"
@@ -502,7 +502,7 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 10,
                     "type": "scene",
                     "text": "Back",
                     "sceneId": "m2"
@@ -578,11 +578,18 @@ pannellum.viewer('panorama', {
                 },                
                 {
                     "pitch": -10,
-                    "yaw": -10,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "verder",
                     "sceneId": "lg2"
                 },
+                {
+                    "pitch": -10,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "leraren kamer",
+                    "sceneId": "lk"
+                }
             ]
         }, 
         "lg2": {
@@ -591,7 +598,7 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -10,
+                    "yaw": -160,
                     "type": "scene",
                     "text": "terug",
                     "sceneId": "lg1"
@@ -650,14 +657,14 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -170,
+                    "yaw": -160,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b10"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 170,
+                    "yaw": 160,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b9"
@@ -686,7 +693,7 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": 20,
-                    "yaw": 170,
+                    "yaw": 150,
                     "type": "scene",
                     "text": "naar boven",
                     "sceneId": "eoba1"
@@ -727,21 +734,21 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "verder",
                     "sceneId": "oba4"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": -80,
                     "type": "scene",
                     "text": "rerug",
                     "sceneId": "oba2"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -60,
+                    "yaw": -20,
                     "type": "scene",
                     "text": "gymzalen",
                     "sceneId": "lo1"
@@ -755,18 +762,25 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 120,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "oba5"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": -10,
                     "type": "scene",
-                    "text": "rerug",
+                    "text": "",
                     "sceneId": "oba3"
                 },
+                {
+                    "pitch": -10,
+                    "yaw": 100,
+                    "type": "scene",
+                    "text": "muzieklokaal",
+                    "sceneId": "ml"
+                }
                 
             ]
         },
@@ -776,26 +790,25 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 10,
                     "type": "scene",
                     "text": "verder",
                     "sceneId": "b3"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 30,
                     "type": "scene",
-                    "text": "terug",
-                    "sceneId": "oba4"
+                    "text": "verder",
+                    "sceneId": "b2"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 180,
                     "type": "scene",
-                    "text": "muzieklokaal",
-                    "sceneId": "ml"
-                }
-                
+                    "text": "terug",
+                    "sceneId": "oba4"
+                },    
             ]
         },
         
@@ -832,7 +845,7 @@ pannellum.viewer('panorama', {
                     "sceneId": "oba3"
                 },
                 {
-                    "pitch": 20,
+                    "pitch": 10,
                     "yaw": 180,
                     "type": "scene",
                     "text": "naar boven",
@@ -840,7 +853,7 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -160,
+                    "yaw": -130,
                     "type": "scene",
                     "text": "gymzaal s06",
                     "sceneId": "s06"
@@ -995,7 +1008,14 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "verder",
                     "sceneId": "e2"
-                },                
+                },
+                                {
+                    "pitch": -10,
+                    "yaw": 100,
+                    "type": "scene",
+                    "text": "onderbouw aula",
+                    "sceneId": "eoba"
+                },  
                 {
                     "pitch": -20,
                     "yaw": -170,
@@ -1012,11 +1032,18 @@ pannellum.viewer('panorama', {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 0,
+                    "yaw": -5,
                     "type": "scene",
                     "text": "verder",
                     "sceneId": "e3"
-                },                
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "e1"
+                }, 
                 {
                     "pitch": -10,
                     "yaw": 180,
@@ -1024,6 +1051,13 @@ pannellum.viewer('panorama', {
                     "text": "terug",
                     "sceneId": "e5"
                 },
+                {
+                    "pitch": -10,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "leerplein",
+                    "sceneId": "lpv"
+                }
                 
             ]
         },
@@ -1034,14 +1068,14 @@ pannellum.viewer('panorama', {
 
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "verder",
                     "sceneId": "e4"
                 },                
                 {
                     "pitch": -10,
-                    "yaw": 180,
+                    "yaw": -175,
                     "type": "scene",
                     "text": "terug",
                     "sceneId": "e2"
