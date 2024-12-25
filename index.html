@@ -13,9 +13,13 @@
 <body>
     <div id="panorama" style="width: 100%; height: 500px;"></div>
     <!-- Mini-map -->
-    <div id="mini-map" style="position: fixed; top: 10px; right: 10px; width: 200px; height: 200px; background-color: rgba(255, 255, 255, 0.8); border: 1px solid #000; z-index: 1000;">
+    <div id="mini-map" style="position: fixed; top: 10px; right: 10px; width: 200px; height: 200px; background-color: rgba(255, 255, 255, 0.3); border: 1px solid #000; z-index: 1000;">
         <img id="map-image" alt="Map" style="width: 100%; height: 100%;">
         <div id="map-marker" style="position: absolute; width: 10px; height: 10px; background-color: red; border-radius: 50%;"></div>
+    </div>
+    <!-- Watermerk --> 
+     <div id="watermark"> 
+        <img src="images/logo.png" alt="Watermark" style="width: 100px; height: auto;"> 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
     <script src="script.js"></script>
