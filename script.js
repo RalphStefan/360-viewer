@@ -390,11 +390,11 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b13.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 115, 'y':55 },
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -90,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b14"
@@ -412,7 +412,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b14.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 105, 'y': 95 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -459,9 +459,9 @@ const scenes= {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -10,
+                    "yaw": 180,
                     "type": "scene",
-                    "text": "180",
+                    "text": "",
                     "sceneId": "b14"
                 },
                 {
@@ -1078,7 +1078,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e1.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 20, 'y': 130 },
+            'mapPosition': { 'x': 21, 'y': 132 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1108,7 +1108,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e2.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 70, 'y': 130 },
+            'mapPosition': { 'x': 40, 'y': 132 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1145,7 +1145,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e3.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 75, 'y':160 },
+            'mapPosition': { 'x': 40, 'y':160 },
             "hotSpots": [
 
                 {
@@ -1169,7 +1169,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e4.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 80, 'y':180 },
+            'mapPosition': { 'x': 40, 'y':180 },
             "hotSpots": [
 
                 {
@@ -1193,7 +1193,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e5.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 80, 'y':100 },
+            'mapPosition': { 'x': 40, 'y':100 },
             "hotSpots": [
 
                 {
