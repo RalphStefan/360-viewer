@@ -1284,9 +1284,9 @@ const mapImage = document.getElementById('map-image');
 
 // Update de plattegrond op basis van de initiële etage
 if (initialEtage === 0) {
-    mapImage.src = 'images/begane_grond.png';
+    mapImage.src = 'plattegrond/begane_grond.png';
 } else if (initialEtage === 1) {
-    mapImage.src = 'images/eerste_etage.png';
+    mapImage.src = 'plattegrond/eerste_etage.png';
 }
 
 // Update de marker positie op de plattegrond
