@@ -448,7 +448,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b15.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 105, 'y': 120 },
             "hotSpots": [
                 {
                     "pitch": -10,
