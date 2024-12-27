@@ -150,7 +150,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b4.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 115, 'y': 128 },
+            'mapPosition': { 'x': 118, 'y': 128 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -195,7 +195,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b6.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 145, 'y': 105 },
+            'mapPosition': { 'x': 140, 'y': 105 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -231,7 +231,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b7.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 150, 'y': 105 },
+            'mapPosition': { 'x': 177, 'y': 105 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -252,7 +252,7 @@ const scenes= {
         "b8": {
             "type": "equirectangular",
             "panorama": "images/b8.JPG",'etage': 0, 
-            'mapPosition': { 'x': 180, 'y': 62 },
+            'mapPosition': { 'x': 170, 'y': 60 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -303,7 +303,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b10.JPG",
             'etage': 0, 
-            'mapPosition': { 'x':175, 'y': 20 },
+            'mapPosition': { 'x':172, 'y': 25 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -332,7 +332,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b11.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 140, 'y': 40 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -361,7 +361,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b12.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 130, 'y': 55 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -390,7 +390,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b13.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 115, 'y':55 },
+            'mapPosition': { 'x': 120, 'y':60 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -412,7 +412,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/b14.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 105, 'y': 95 },
+            'mapPosition': { 'x': 105, 'y': 85 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -477,7 +477,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/m1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 143, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -500,7 +500,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/m2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 148, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -546,7 +546,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/ba.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 158, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -634,7 +634,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/lg2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 110, 'y': 175 },
+            'mapPosition': { 'x': 108, 'y': 172 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -755,7 +755,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/oba2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 55, 'y': 145 },
+            'mapPosition': { 'x': 56, 'y': 148 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -874,7 +874,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/ml.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 75, 'y': 100 },
+            'mapPosition': { 'x': 70, 'y':100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -890,7 +890,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/lo1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 56, 'y': 143 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -987,7 +987,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/s06.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 40, 'y': 125 },
             "hotSpots": [
 
                 {
@@ -1078,7 +1078,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e1.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 21, 'y': 132 },
+            'mapPosition': { 'x': 22, 'y': 130 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1108,7 +1108,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e2.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 55, 'y': 132 },
+            'mapPosition': { 'x': 50, 'y': 130 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1145,7 +1145,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e3.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 55, 'y':160 },
+            'mapPosition': { 'x': 52, 'y':158 },
             "hotSpots": [
 
                 {
@@ -1169,7 +1169,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e4.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 55, 'y':180 },
+            'mapPosition': { 'x': 49, 'y':175 },
             "hotSpots": [
 
                 {
@@ -1193,7 +1193,7 @@ const scenes= {
             "type": "equirectangular",
             "panorama": "images/e5.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 55, 'y':100 },
+            'mapPosition': { 'x': 51, 'y':95 },
             "hotSpots": [
 
                 {
