@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 86, 'y': 155 },
-            "noordPunt": 90, // Noordpunt in graden voor scene 
+            "noordPunt": 180, // Noordpunt in graden voor scene 
             "hotSpots": [
                 {
                     "pitch": -10,
