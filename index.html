@@ -27,10 +27,13 @@
 <body>
     <div id="panorama" style="width: 100%; height: 500px; position: relative;">
         <!-- Mini-map -->
-        <div href="plattegrond.html" target="_blank" id="mini-map">
-            <img id="map-image" src="plattegrond.jpg" alt="Map" style="width: 100%; height: 100%;">
-
-            <div id="map-marker" style="position: absolute; width: 8px; height: 8px; background-color: red; border-radius: 80%;"></div>
+        <div id="mini-map"> 
+            <img id="map-image" src="etage_0.png" alt="Map"> 
+        </div> 
+        <div id="buttons"> 
+            <div class="button" onclick="changeScene('i1')">Scène 1</div> 
+            <div class="button" onclick="changeScene('i2')">Scène 2</div> 
+            <div class="button" onclick="changeScene('i3')">Scène 3</div> 
         </div>
         <!-- Watermerk -->
         <a href="https://www.oscarromero.nl" target="_blank" id="watermark">
