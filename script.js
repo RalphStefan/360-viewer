@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b1.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 86, 'y': 150 },
+            "noordPunt": 0, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -74,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b2.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 95, 'y': 140 },
+            "noordPunt": 0, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -110,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b3.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 96, 'y': 128 },
+            "noordPunt": 0, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -153,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b4.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 118, 'y': 128 },
+            "noordPunt": 0, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1283,6 +1287,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } else { 
         console.error('Geen begin scène gedefinieerd.'); 
     };
+
+    
     function berekenKijkRichting(noord_punt, yaw) { 
         return (noord_punt + yaw) % 360; // Zorg ervoor dat de richting binnen 0-360 graden blijft 
         } 
