@@ -1257,7 +1257,7 @@ document.addEventListener('DOMContentLoaded', function() {
             viewer.loadScene(sceneId); // Verander de plattegrond afbeelding 
             const mapImage = document.getElementById('plattegrond'); 
             if (mapImage) { 
-                const mapSrc = `plattegrond_etage${scene.etage}.png`; 
+                const mapSrc = `plattegrond/etage_${scene.etage}.png`; 
                 mapImage.src = mapSrc; 
             } 
         } 
