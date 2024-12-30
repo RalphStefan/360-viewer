@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Oscar Romero 360 Viewer</title>
+    <link rel="stylesheet" href="pannellum.css">
+</head>
+
+<body>
+    <div id="panorama" style="width: 100%; height: 500px; position: relative;">
+        <!-- Mini-map -->
+        <div id="mini-map" href="plattegrond.html" target="_blank"> 
+            <img id="map-image" src="{mapSrc}" alt="Map">
+        </div> 
+        <!-- Watermerk -->
+        <a href="https://www.oscarromero.nl" target="_blank" id="watermark">
+            <img src="images/logo.png" alt="Watermark" style="width: 100px; height: auto;">
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
