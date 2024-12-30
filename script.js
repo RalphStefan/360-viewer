@@ -1242,28 +1242,29 @@ document.addEventListener('DOMContentLoaded', function() {
                     "sceneId": "e5"
                 }
             ]
-        }
+        },
     };
-    const etageImages = {
-        0: 'etage_0.png',
-        1: 'etage_1.png',
-        2: 'etage_2.png'
-    };
-
-    window.changeScene = function(sceneId) {
-        const scene = scenes[sceneId];
-        if (scene) {
-            // Verander de panorama afbeelding
-            const panorama = document.getElementById('panorama');
-            if (panorama) {
-                panorama.src = scene.panorama;
-            }
-
-            // Verander de plattegrond afbeelding
-            const mapImage = document.getElementById('map-image');
-            if (mapImage && etageImages[scene.etage] !== undefined) {
-                mapImage.src = etageImages[scene.etage];
-            }
-        }
-    };
+    const viewer = pannellum.viewer('panorama', { 
+        default: { 
+            firstScene: 'i1' 
+        }, 
+        scenes: scenes 
+    }); 
+    window.changeScene = function(sceneId) { 
+        const scene = scenes[sceneId]; 
+        if (scene) { 
+            // Verander de scene in Pannellum 
+            viewer.loadScene(sceneId); // Verander de plattegrond afbeelding 
+            const mapImage = document.getElementById('plattegrond'); 
+            if (mapImage) { 
+                const mapSrc = `plattegrond_${scene.etage}.png`; 
+                mapImage.src = mapSrc; 
+            } 
+        } 
+    }; 
+    // Event listener voor hotSpots om automatisch van scene te veranderen 
+    viewer.on('scenechange', function() { 
+        const currentScene = viewer.getScene(); 
+        changeScene(currentScene); 
+    }); 
 });
