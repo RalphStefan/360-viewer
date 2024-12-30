@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/ingang.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 86, 'y': 184 },
+            "noordPunt": 0, // Noordpunt in graden voor scene 1
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 86, 'y': 155 },
+            "noordPunt": 90, // Noordpunt in graden voor scene 2
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1290,15 +1292,26 @@ document.addEventListener('DOMContentLoaded', function() {
             } 
         } 
     }; 
-    viewer.on('scenechange', function() { 
-        const currentScene = viewer.getScene(); 
-        changeScene(currentScene); 
-    }); 
-    // Haal de scene parameter op uit de URL 
-    const urlParams = new URLSearchParams(window.location.search); 
-    const initialScene = urlParams.get('scene'); 
-    if (initialScene) { changeScene(initialScene); 
-    } else { 
-        console.error('Geen begin scène gedefinieerd.'); 
-    } 
+
+// Functie om de kijkrichting te berekenen
+function berekenKijkRichting(noord_punt, yaw) {
+    return (noord_punt + yaw) % 360; // Zorg ervoor dat de richting binnen 0-360 graden blijft
+}
+
+// Functie om kijkrichtingen voor alle scenes te berekenen
+function berekenAlleKijkRichtingen(scenes) {
+    for (let sceneId in scenes) {
+        if (scenes.hasOwnProperty(sceneId)) {
+            let scene = scenes[sceneId];
+            for (let hotSpot of scene.hotSpots) {
+                let kijk_richting = berekenKijkRichting(scene.noordPunt, hotSpot.yaw);
+                console.log(`Kijkrichting voor hotspot in ${sceneId}: ${kijk_richting} graden`);
+            }
+        }
+    }
+}
+
+// Bereken kijkrichtingen voor alle scenes
+berekenAlleKijkRichtingen(scenes);
+
 });
