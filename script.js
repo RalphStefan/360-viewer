@@ -1253,12 +1253,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.changeScene = function(sceneId) { 
         const scene = scenes[sceneId]; 
         if (scene) { 
-            // Verander de scene in Pannellum 
-            viewer.loadScene(sceneId); // Verander de plattegrond afbeelding 
-            const mapImage = document.getElementById('plattegrond'); 
+            console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`); 
+            viewer.loadScene(sceneId); 
+
+            const mapImage = document.getElementById('map-image'); 
             if (mapImage) { 
                 const mapSrc = `plattegrond/etage_${scene.etage}.png`; 
-                mapImage.src = mapSrc; 
+                console.log(`Changing map to: ${mapSrc}`); 
+                mapImage.src = mapSrc;
             } 
         } 
     }; 
