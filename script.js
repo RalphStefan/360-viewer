@@ -1300,21 +1300,29 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 
-    function berekenKijkRichting(noord_punt, yaw) { 
-        return (noord_punt + yaw) % 360; // Zorg ervoor dat de richting binnen 0-360 graden blijft 
-        } 
 
-        // Functie om kijkrichtingen voor alle scenes te berekenen
-        function berekenAlleKijkRichtingen(scenes) { 
-            for (let sceneId in scenes) { 
-                if (scenes.hasOwnProperty(sceneId)) { 
-                    let scene = scenes[sceneId]; 
-                    for (let hotSpot of scene.hotSpots) { 
-                        let kijk_richting = berekenKijkRichting(scene.noordPunt, hotSpot.yaw); 
-                        console.log(`Kijkrichting voor hotspot in ${sceneId}: ${kijk_richting} graden`); 
-                    } 
-                } 
-            } 
-        } // Bereken kijkrichtingen voor alle scenes 
-        berekenAlleKijkRichtingen(scenes);
+// Functie om kijkrichtingen voor alle scenes en hotspots te berekenen
+function berekenAlleKijkRichtingen(scenes) {
+    let kijkRichtingen = {};
+    for (let sceneId in scenes) {
+        if (scenes.hasOwnProperty(sceneId)) {
+            let scene = scenes[sceneId];
+            for (let hotSpot of scene.hotSpots) {
+                let kijk_richting = berekenKijkRichting(scene.noordPunt, hotSpot.yaw);
+                if (!kijkRichtingen[sceneId]) {
+                    kijkRichtingen[sceneId] = [];
+                }
+                kijkRichtingen[sceneId].push({
+                    hotSpot: hotSpot,
+                    kijkRichting: kijk_richting
+                });
+            }
+        }
+    }
+    return kijkRichtingen;
+}
+
+// Bereken kijkrichtingen voor alle scenes
+let kijkRichtingen = berekenAlleKijkRichtingen(scenes);
+console.log(kijkRichtingen);
 });
