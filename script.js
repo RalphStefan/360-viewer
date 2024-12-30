@@ -1261,6 +1261,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 const mapSrc = `plattegrond/etage_${scene.etage}.png`; 
                 console.log(`Changing map to: ${mapSrc}`); 
                 mapImage.src = mapSrc; 
+                // Update locatie-indicator positie 
+                const { x, y } = scene.mapPosition; 
+                locationIndicator.style.left = `${x}px`; 
+                locationIndicator.style.top = `${y}px`;
             } 
         } 
     }; 

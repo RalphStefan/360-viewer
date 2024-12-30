@@ -455,3 +455,12 @@ pnlm-fullscreen-toggle-button-active{
     opacity: 0.9;
     z-index: 1000;
 }
+#location-indicator { 
+    width: 10px; 
+    height: 10px; 
+    background-color: black; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
