@@ -1256,7 +1256,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (scene) { 
             console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`); 
             viewer.loadScene(sceneId); 
+
             const mapImage = document.getElementById('map-image'); 
+            const locationIndicator = document.getElementById('location-indicator');
             if (mapImage) { 
                 const mapSrc = `plattegrond/etage_${scene.etage}.png`; 
                 console.log(`Changing map to: ${mapSrc}`); 
