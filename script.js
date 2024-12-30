@@ -1267,4 +1267,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentScene = viewer.getScene(); 
         changeScene(currentScene); 
     }); 
+
+    changeScene(i1);
 });
