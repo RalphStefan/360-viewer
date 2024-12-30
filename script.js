@@ -1250,25 +1250,29 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 
         scenes: scenes 
     }); 
+    
     window.changeScene = function(sceneId) { 
         const scene = scenes[sceneId]; 
         if (scene) { 
             console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`); 
             viewer.loadScene(sceneId); 
-
             const mapImage = document.getElementById('map-image'); 
             if (mapImage) { 
                 const mapSrc = `plattegrond/etage_${scene.etage}.png`; 
                 console.log(`Changing map to: ${mapSrc}`); 
-                mapImage.src = mapSrc;
+                mapImage.src = mapSrc; 
             } 
         } 
     }; 
-    // Event listener voor hotSpots om automatisch van scene te veranderen 
     viewer.on('scenechange', function() { 
         const currentScene = viewer.getScene(); 
         changeScene(currentScene); 
     }); 
-
-    changeScene(i1);
+    // Haal de scene parameter op uit de URL 
+    const urlParams = new URLSearchParams(window.location.search); 
+    const initialScene = urlParams.get('scene'); 
+    if (initialScene) { changeScene(initialScene); 
+    } else { 
+        console.error('Geen begin scène gedefinieerd.'); 
+    } 
 });
