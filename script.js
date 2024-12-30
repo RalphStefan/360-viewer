@@ -473,11 +473,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
+
+// m staat voor mediatheek en mz voor mandelazaal
+
         "m1": {
             "type": "equirectangular",
             "panorama": "images/m1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 143, 'y': 100 },
+            'mapPosition': { 'x': 138, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -500,7 +503,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 148, 'y': 100 },
+            'mapPosition': { 'x': 138, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -530,7 +533,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m3.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 138, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -542,11 +545,13 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
 
+// ba staat voor bovenbouw aula
+
         "ba": {
             "type": "equirectangular",
             "panorama": "images/ba.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 158, 'y': 100 },
+            'mapPosition': { 'x': 138, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -600,6 +605,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
+
+// lk staat voor leraren kamer en lg voor leraar gang
 
         "lg1": {
             "type": "equirectangular",
@@ -667,7 +674,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 },                
             ]
         }, 
-        "hvl": {
+
+// hvl staat voor handvaardigheid lokaal
+
+        "hvl": { 
             "type": "equirectangular",
             "panorama": "images/hvl.JPG",
             'etage': 0, 
@@ -720,6 +730,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ]
         },
+
+// oba staat voor onderbouw aula
 
         "oba1": {
             "type": "equirectangular",
@@ -886,6 +898,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ]
         },
+
+// hieronder staan de gym zalen en sportzalen
+
         "lo1": {
             "type": "equirectangular",
             "panorama": "images/lo1.JPG",
@@ -1051,6 +1066,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ]
         },
+
+// e staat  voor de eerste etage. 
+//eoba = eerste etage onderbouw aula
+// lpv = leerplein vwo 
+
         "eoba": {
             "type": "equirectangular",
             "panorama": "images/eoba.JPG",
