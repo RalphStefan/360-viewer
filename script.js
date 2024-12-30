@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 86, 'y': 155 },
-            "noordPunt": 90, // Noordpunt in graden voor scene 2
+            "noordPunt": 90, // Noordpunt in graden voor scene 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "b8": {
             "type": "equirectangular",
             "panorama": "images/b8.JPG",'etage': 0, 
-            'mapPosition': { 'x': 177, 'y': 100 },
+            'mapPosition': { 'x': 170, 'y': 60 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b9.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 177, 'y': 60 },
+            'mapPosition': { 'x': 180, 'y': 105 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -175,
+                    "yaw": 175,
                     "type": "scene",
                     "text": "aula",
                     "sceneId": "ba"
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 150,
+                    "yaw": 160,
                     "type": "scene",
                     "text": "",
                     "sceneId": "0,49"
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b11.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 144, 'y': 38 },
+            'mapPosition': { 'x': 140, 'y': 40 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 80,
+                    "yaw": 90,
                     "type": "scene",
                     "text": "Mandelazaal",
                     "sceneId": "mz"
@@ -363,11 +363,11 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b12.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 136, 'y': 53 },
+            'mapPosition': { 'x': 130, 'y': 55 },
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -177,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "b13"
@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b13.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 115, 'y':58 },
+            'mapPosition': { 'x': 120, 'y':60 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -454,13 +454,13 @@ document.addEventListener('DOMContentLoaded', function() {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 15,
+                    "yaw": 10,
                     "type": "scene",
-                    "text": "links",
+                    "text": "",
                     "sceneId": "b3"
                 },
                 {
-                    "pitch": -45,
+                    "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
                     "text": "",
@@ -470,19 +470,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -10,
                     "type": "scene",
-                    "text": "rechts",
+                    "text": "",
                     "sceneId": "b4"
                 }
             ]
         },
-
-// m staat voor mediatheek en mz voor mandelazaal
-
         "m1": {
             "type": "equirectangular",
             "panorama": "images/m1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 138, 'y': 100 },
+            'mapPosition': { 'x': 143, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -505,7 +502,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 138, 'y': 100 },
+            'mapPosition': { 'x': 148, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -535,7 +532,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m3.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 138, 'y': 100 },
+            'mapPosition': { 'x': 250, 'y': 250 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -547,38 +544,36 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
 
-// ba staat voor bovenbouw aula
-
         "ba": {
             "type": "equirectangular",
             "panorama": "images/ba.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 138, 'y': 100 },
+            'mapPosition': { 'x': 158, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -140,
+                    "yaw": 110,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b9"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 130,
+                    "yaw": -150,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b13"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "mediatheek",
                     "sceneId": "m2"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 172,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "Mandelazaal",
                     "sceneId": "mz"
@@ -589,26 +584,24 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/mz.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 148, 'y': 50 },
+            'mapPosition': { 'x': 250, 'y': 250 },
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -35,
+                    "yaw": -40,
                     "type": "scene",
                     "text": "aula",
                     "sceneId": "ba"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 35,
+                    "yaw": 40,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b11"
                 }
             ]
         },
-
-// lk staat voor leraren kamer en lg voor leraar gang
 
         "lg1": {
             "type": "equirectangular",
@@ -676,14 +669,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 },                
             ]
         }, 
-
-// hvl staat voor handvaardigheid lokaal
-
-        "hvl": { 
+        "hvl": {
             "type": "equirectangular",
             "panorama": "images/hvl.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 96, 'y': 95 },
+            'mapPosition': { 'x': 250, 'y': 250 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -698,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/tuin.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 132, 'y': 90 },
+            'mapPosition': { 'x': 250, 'y': 250 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -713,7 +703,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/0,49.JPG",
             'etage': 0, 
-            'mapPosition': { 'x':183, 'y': 30 },
+            'mapPosition': { 'x': 250, 'y': 250 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -732,8 +722,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ]
         },
-
-// oba staat voor onderbouw aula
 
         "oba1": {
             "type": "equirectangular",
@@ -888,11 +876,11 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ml.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 65, 'y':105 },
+            'mapPosition': { 'x': 70, 'y':100 },
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 20,
+                    "yaw": 90,
                     "type": "scene",
                     "text": "terug",
                     "sceneId": "oba4"
@@ -900,14 +888,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ]
         },
-
-// hieronder staan de gym zalen en sportzalen
-
         "lo1": {
             "type": "equirectangular",
             "panorama": "images/lo1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 50, 'y': 140 },
+            'mapPosition': { 'x': 56, 'y': 143 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1004,7 +989,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s06.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 25, 'y': 125 },
+            'mapPosition': { 'x': 40, 'y': 125 },
             "hotSpots": [
 
                 {
@@ -1068,11 +1053,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ]
         },
-
-// e staat  voor de eerste etage. 
-//eoba = eerste etage onderbouw aula
-// lpv = leerplein vwo 
-
         "eoba": {
             "type": "equirectangular",
             "panorama": "images/eoba.JPG",
@@ -1179,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },                
                 {
                     "pitch": -10,
-                    "yaw": 180,
+                    "yaw": -175,
                     "type": "scene",
                     "text": "terug",
                     "sceneId": "e2"
@@ -1191,7 +1171,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e4.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 49, 'y':170 },
+            'mapPosition': { 'x': 49, 'y':175 },
             "hotSpots": [
 
                 {
@@ -1258,7 +1238,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -150,
+                    "yaw": -160,
                     "type": "scene",
                     "text": "",
                     "sceneId": "e5"
@@ -1292,26 +1272,32 @@ document.addEventListener('DOMContentLoaded', function() {
             } 
         } 
     }; 
+    viewer.on('scenechange', function() { 
+        const currentScene = viewer.getScene(); 
+        changeScene(currentScene); 
+    }); 
+    // Haal de scene parameter op uit de URL 
+    const urlParams = new URLSearchParams(window.location.search); 
+    const initialScene = urlParams.get('scene'); 
+    if (initialScene) { changeScene(initialScene); 
+    } else { 
+        console.error('Geen begin scène gedefinieerd.'); 
+    };
+    function berekenKijkRichting(noord_punt, yaw) { 
+        return (noord_punt + yaw) % 360; // Zorg ervoor dat de richting binnen 0-360 graden blijft 
+        } 
 
-// Functie om de kijkrichting te berekenen
-function berekenKijkRichting(noord_punt, yaw) {
-    return (noord_punt + yaw) % 360; // Zorg ervoor dat de richting binnen 0-360 graden blijft
-}
-
-// Functie om kijkrichtingen voor alle scenes te berekenen
-function berekenAlleKijkRichtingen(scenes) {
-    for (let sceneId in scenes) {
-        if (scenes.hasOwnProperty(sceneId)) {
-            let scene = scenes[sceneId];
-            for (let hotSpot of scene.hotSpots) {
-                let kijk_richting = berekenKijkRichting(scene.noordPunt, hotSpot.yaw);
-                console.log(`Kijkrichting voor hotspot in ${sceneId}: ${kijk_richting} graden`);
-            }
-        }
-    }
-}
-
-// Bereken kijkrichtingen voor alle scenes
-berekenAlleKijkRichtingen(scenes);
-
+        // Functie om kijkrichtingen voor alle scenes te berekenen
+        function berekenAlleKijkRichtingen(scenes) { 
+            for (let sceneId in scenes) { 
+                if (scenes.hasOwnProperty(sceneId)) { 
+                    let scene = scenes[sceneId]; 
+                    for (let hotSpot of scene.hotSpots) { 
+                        let kijk_richting = berekenKijkRichting(scene.noordPunt, hotSpot.yaw); 
+                        console.log(`Kijkrichting voor hotspot in ${sceneId}: ${kijk_richting} graden`); 
+                    } 
+                } 
+            } 
+        } // Bereken kijkrichtingen voor alle scenes 
+        berekenAlleKijkRichtingen(scenes);
 });
