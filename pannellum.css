@@ -466,3 +466,8 @@ pnlm-fullscreen-toggle-button-active{
     top: 0; 
     left: 0; 
 }
+#link-drone { 
+    text-align: center; 
+    margin-top: 50px; 
+    position: relative; 
+}
