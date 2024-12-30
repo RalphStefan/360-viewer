@@ -6,21 +6,23 @@
     <link rel="stylesheet" href="pannellum.css">
 </head>
 
-<body>
-    <div id="panorama" style="width: 100%; height: 500px; position: relative;">
-        <!-- Mini-map -->
-        <div id="mini-map"> 
-            <a  href="plattegrond.html" target="_blank">
-                <img id="map-image" src="{mapSrc}" alt="Map">
-                <div id="location-indicator"></div>
+    <body>
+        <div id="panorama" style="width: 100%; height: 500px; position: relative;">
+            <!-- Mini-map -->
+            <div id="mini-map"> 
+                <a  href="plattegrond.html" target="_blank">
+                    <img id="map-image" src="{mapSrc}" alt="Map">
+                    <div id="location-indicator"></div>
+                </a>
+            </div> 
+            <!-- Watermerk -->
+            <a href="https://www.oscarromero.nl" target="_blank" id="watermark">
+                <img src="images/logo.png" alt="Watermark" style="width: 100px; height: auto;">
             </a>
-        </div> 
-        <!-- Watermerk -->
-        <a href="https://www.oscarromero.nl" target="_blank" id="watermark">
-            <img src="images/logo.png" alt="Watermark" style="width: 100px; height: auto;">
-        </a>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
-    <script src="script.js"></script>
-</body>
+            <div id="intro"> 
+                <button id="drone-shot" onclick="startVR('droneshot1.html')">Drone-shot 1</button> 
+            </div> 
+
+    </body>
+
 </html>
