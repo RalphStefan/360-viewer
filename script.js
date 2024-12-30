@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/ingang.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 86, 'y': 184 },
-            "noordPunt": 0, // Noordpunt in graden voor scene 1
+            "noordPunt": 90, // Noordpunt in graden voor scene 1
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 86, 'y': 155 },
-            "noordPunt": 180, // Noordpunt in graden voor scene 
+            "noordPunt": 90, // Noordpunt in graden voor scene 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b1.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 86, 'y': 150 },
-            "noordPunt": 0, 
+            "noordPunt": 90, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b2.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 95, 'y': 140 },
-            "noordPunt": 0, 
+            "noordPunt": 180, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b3.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 96, 'y': 128 },
-            "noordPunt": 0, 
+            "noordPunt": 180, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b4.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 118, 'y': 128 },
-            "noordPunt": 0, 
+            "noordPunt": 180, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -180,6 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b5.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 136, 'y': 128 },
+            "noordPunt": 180, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -202,6 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b6.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 140, 'y': 105 },
+            "noordPunt": 180, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -238,6 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b7.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 177, 'y': 105 },
+            "noordPunt": 180, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -258,7 +261,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "b8": {
             "type": "equirectangular",
             "panorama": "images/b8.JPG",'etage': 0, 
-            'mapPosition': { 'x': 170, 'y': 60 },
+            'mapPosition': { 'x': 175, 'y': 104 },
+            "noordPunt": 90, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -280,7 +284,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b9.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 180, 'y': 105 },
+            'mapPosition': { 'x': 175, 'y': 60 },
+            "noordPunt": 180, 
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -310,6 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b10.JPG",
             'etage': 0, 
             'mapPosition': { 'x':172, 'y': 25 },
+            "noordPunt": 60,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -339,6 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b11.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 140, 'y': 40 },
+            "noordPunt": 150,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -368,6 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b12.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 130, 'y': 55 },
+            "noordPunt": 150,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -397,6 +405,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b13.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 120, 'y':60 },
+            "noordPunt": 330,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -419,6 +428,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b14.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 105, 'y': 85 },
+            "noordPunt": 270,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -455,6 +465,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/b15.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 105, 'y': 120 },
+            "noordPunt": 270,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1288,7 +1299,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Geen begin scène gedefinieerd.'); 
     };
 
-    
+
     function berekenKijkRichting(noord_punt, yaw) { 
         return (noord_punt + yaw) % 360; // Zorg ervoor dat de richting binnen 0-360 graden blijft 
         } 
