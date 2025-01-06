@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
             'etage': 0, 
-            "infinfo-box": "Welkom in scène i1",
+            "info-box": "Welkom in scène i1",
             'mapPosition': { 'x': 86, 'y': 184 },
             "noordPunt": 90, // Noordpunt in graden voor scene 1
             "hotSpots": [
@@ -1265,10 +1265,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
-        "onSceneLoad": function() { 
-            const scene = this.getConfig().scenes[this.getScene()]; 
-            displaySceneInfo(scene);
-        }
     };
     const viewer = pannellum.viewer('panorama', { 
         default: { 
