@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "i2",
+                    "type": "info", 
+                    "text": "Meer informatie over deze hotspot", 
+                    "attributes": { "class": "custom-hotspot" }
                 }
             ]
         },
@@ -1265,6 +1268,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ]
         },
+        "onSceneLoad": function() { 
+            const scene = this.getConfig().scenes[this.getScene()]; 
+            displaySceneInfo(scene);
+        }
     };
     const viewer = pannellum.viewer('panorama', { 
         default: { 
