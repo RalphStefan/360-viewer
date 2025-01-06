@@ -501,7 +501,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     "yaw": 180,
                     "type": "scene",
                     "text": "next",
-                    "sceneId": "m2"
+                    "sceneId": "m2",
+                    "type": "info", 
+                    "text": "Welkom in de mediatheek", 
+                    "attributes": { 
+                        "class": "custom-hotspot" 
+                    }
                 },
                 {
                     "pitch": -10,
