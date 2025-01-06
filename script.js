@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
             'etage': 0, 
-            "info": "Welkom in scène i1",
+            "infinfo-box": "Welkom in scène i1",
             'mapPosition': { 'x': 86, 'y': 184 },
             "noordPunt": 90, // Noordpunt in graden voor scene 1
             "hotSpots": [
