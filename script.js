@@ -1313,8 +1313,13 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Geen begin scène gedefinieerd.'); 
     };
 
-
-
+    function berekenKijkRichting(noordPunt, yaw) {
+        console.log(`NoordPunt: ${noordPunt}, Yaw: ${yaw}`);
+        let result = (noordPunt + yaw) % 360;
+        console.log(`Result: ${result}`);
+        return result;
+    }
+    
     function berekenAlleKijkRichtingen(scenes) {
         let kijkRichtingen = {};
         for (let sceneId in scenes) {
@@ -1333,5 +1338,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         return kijkRichtingen;
     }
+    
+    let kijkRichtingen = berekenAlleKijkRichtingen(scenes);
+    console.log(kijkRichtingen);
     
 });
