@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 0,
+                    "yaw": -20,
                     "type": "scene",
                     "type": "info", 
                     "text": "Meer informatie over deze hotspot", 
