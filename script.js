@@ -907,7 +907,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lo1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 56, 'y': 143 },
+            'mapPosition': { 'x': 45, 'y': 140 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -942,8 +942,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "lo2": {
             "type": "equirectangular",
             "panorama": "images/lo2.JPG",
-            'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'etage': 3, 
+            'mapPosition': { 'x': 50, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": 20,
@@ -964,7 +964,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "yaw": -90,
                     "type": "scene",
                     "text": "sportzaal 1",
-                    "sceneId": "s12"
+                    "sceneId": "s08"
                 }
                 
             ]
@@ -972,8 +972,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "lo3": {
             "type": "equirectangular",
             "panorama": "images/lo3.JPG",
-            'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'etage': 4, 
+            'mapPosition': { 'x': 100, 'y': 100 },
             "hotSpots": [
 
                 {
@@ -1004,7 +1004,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s06.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 40, 'y': 125 },
+            'mapPosition': { 'x': 20, 'y': 125 },
             "hotSpots": [
 
                 {
@@ -1017,11 +1017,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ]
         },
+        "s08": {
+            "type": "equirectangular",
+            "panorama": "images/s12.JPG",
+            'etage': 3, 
+            'mapPosition': { 'x': 100, 'y': 100 },
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": -160,
+                    "type": "scene",
+                    "text": "terug",
+                    "sceneId": "lo2"
+                },
+                
+            ]
+        },
         "s10": {
             "type": "equirectangular",
             "panorama": "images/s10.JPG",
-            'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'etage': 4, 
+            'mapPosition': { 'x': 50, 'y': 100 },
             "hotSpots": [
 
                 {
@@ -1034,28 +1050,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ]
         },
-        "s12": {
-            "type": "equirectangular",
-            "panorama": "images/s12.JPG",
-            'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
-            "hotSpots": [
-
-                {
-                    "pitch": -10,
-                    "yaw": -160,
-                    "type": "scene",
-                    "text": "terug",
-                    "sceneId": "lo2"
-                },
-                
-            ]
-        },
         "s14": {
             "type": "equirectangular",
             "panorama": "images/s14.JPG",
-            'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'etage': 5, 
+            'mapPosition': { 'x': 50, 'y': 50 },
             "hotSpots": [
 
                 {
