@@ -1305,7 +1305,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Functie om kijkrichtingen voor alle scenes en hotspots te berekenen
+// Define the function berekenKijkRichting
+function berekenKijkRichting(noordPunt, yaw) {
+    // Example calculation
+    return (noordPunt + yaw) % 360; // Adjust this logic based on your actual need
+}
+
+// Existing function berekenAlleKijkRichtingen
 function berekenAlleKijkRichtingen(scenes) {
     let kijkRichtingen = {};
     for (let sceneId in scenes) {
@@ -1316,17 +1322,15 @@ function berekenAlleKijkRichtingen(scenes) {
                 if (!kijkRichtingen[sceneId]) {
                     kijkRichtingen[sceneId] = [];
                 }
-                kijkRichtingen[sceneId].push({
-                    hotSpot: hotSpot,
-                    kijkRichting: kijk_richting
-                });
+                kijkRichtingen[sceneId].push({ hotSpot: hotSpot, kijkRichting: kijk_richting });
             }
         }
     }
     return kijkRichtingen;
 }
 
-// Bereken kijkrichtingen voor alle scenes
+// Calling the function berekenAlleKijkRichtingen
 let kijkRichtingen = berekenAlleKijkRichtingen(scenes);
 console.log(kijkRichtingen);
+
 });
