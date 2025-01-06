@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
             'etage': 0, 
-            "infoText": "Welkom in scène i1",
+            "info": "Welkom in scène i1",
             'mapPosition': { 'x': 86, 'y': 184 },
             "noordPunt": 90, // Noordpunt in graden voor scene 1
             "hotSpots": [
@@ -15,9 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "i2",
-                    "type": "info", 
-                    "text": "Meer informatie over deze hotspot", 
-                    "attributes": { "class": "custom-hotspot" }
                 }
             ]
         },
