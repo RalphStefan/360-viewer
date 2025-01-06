@@ -1313,33 +1313,31 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Geen begin scène gedefinieerd.'); 
     };
 
-    function berekenKijkRichting(noordPunt, yaw) {
-        console.log(`NoordPunt: ${noordPunt}, Yaw: ${yaw}`);
-        let result = (noordPunt + yaw) % 360;
-        console.log(`Result: ${result}`);
-        return result;
-    }
-    
-    function berekenAlleKijkRichtingen(scenes) {
-        let kijkRichtingen = {};
-        for (let sceneId in scenes) {
-            if (scenes.hasOwnProperty(sceneId)) {
-                let scene = scenes[sceneId];
-                console.log(`Scene: ${sceneId}, NoordPunt: ${scene.noordPunt}`);
-                for (let hotSpot of scene.hotSpots) {
-                    let kijk_richting = berekenKijkRichting(scene.noordPunt, hotSpot.yaw);
-                    console.log(`Hotspot Yaw: ${hotSpot.yaw}, KijkRichting: ${kijk_richting}`);
-                    if (!kijkRichtingen[sceneId]) {
-                        kijkRichtingen[sceneId] = [];
-                    }
-                    kijkRichtingen[sceneId].push({ hotSpot: hotSpot, kijkRichting: kijk_richting });
-                }
+
+// Functie om de kijkrichting te berekenen
+function calculateViewDirection(noordPunt, yaw) {
+    return (noordPunt + yaw) % 360;
+}
+
+// Functie om alle kijkrichtingen te berekenen
+function calculateAllViewDirections(scenes) {
+    let viewDirections = {};
+    for (let sceneId in scenes) {
+        if (scenes.hasOwnProperty(sceneId)) {
+            let scene = scenes[sceneId];
+            viewDirections[sceneId] = [];
+            for (let hotSpot of scene.hotSpots) {
+                let viewDirection = calculateViewDirection(scene.noordPunt, hotSpot.yaw);
+                viewDirections[sceneId].push({ hotSpot: hotSpot, viewDirection: viewDirection });
             }
         }
-        return kijkRichtingen;
     }
-    
-    let kijkRichtingen = berekenAlleKijkRichtingen(scenes);
-    console.log(kijkRichtingen);
+    return viewDirections;
+}
+
+// Test de eenvoudige configuratie
+let viewDirections = calculateAllViewDirections(simpleScenes);
+console.log("View Directions:", viewDirections);
+
     
 });
