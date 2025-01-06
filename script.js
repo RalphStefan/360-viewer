@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
             'etage': 0, 
-            "infotext": "Welkom in scène i1",
             'mapPosition': { 'x': 86, 'y': 184 },
             "noordPunt": 90, // Noordpunt in graden voor scene 1
             "hotSpots": [
@@ -15,6 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     "type": "scene",
                     "text": "Next",
                     "sceneId": "i2",
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 0,
+                    "type": "scene",
+                    "type": "info", 
+                    "text": "Meer informatie over deze hotspot", 
+                    "attributes": { 
+                        "class": "custom-hotspot"
+                    }
                 }
             ]
         },
@@ -1306,32 +1315,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Define the function berekenKijkRichting
-function berekenKijkRichting(noordPunt, yaw) {
-    // Example calculation
-    return (noordPunt + yaw) % 360; // Adjust this logic based on your actual need
-}
-
-// Existing function berekenAlleKijkRichtingen
-function berekenAlleKijkRichtingen(scenes) {
-    let kijkRichtingen = {};
-    for (let sceneId in scenes) {
-        if (scenes.hasOwnProperty(sceneId)) {
-            let scene = scenes[sceneId];
-            for (let hotSpot of scene.hotSpots) {
-                let kijk_richting = berekenKijkRichting(scene.noordPunt, hotSpot.yaw);
-                if (!kijkRichtingen[sceneId]) {
-                    kijkRichtingen[sceneId] = [];
+    function berekenAlleKijkRichtingen(scenes) {
+        let kijkRichtingen = {};
+        for (let sceneId in scenes) {
+            if (scenes.hasOwnProperty(sceneId)) {
+                let scene = scenes[sceneId];
+                console.log(`Scene: ${sceneId}, NoordPunt: ${scene.noordPunt}`);
+                for (let hotSpot of scene.hotSpots) {
+                    let kijk_richting = berekenKijkRichting(scene.noordPunt, hotSpot.yaw);
+                    console.log(`Hotspot Yaw: ${hotSpot.yaw}, KijkRichting: ${kijk_richting}`);
+                    if (!kijkRichtingen[sceneId]) {
+                        kijkRichtingen[sceneId] = [];
+                    }
+                    kijkRichtingen[sceneId].push({ hotSpot: hotSpot, kijkRichting: kijk_richting });
                 }
-                kijkRichtingen[sceneId].push({ hotSpot: hotSpot, kijkRichting: kijk_richting });
             }
         }
+        return kijkRichtingen;
     }
-    return kijkRichtingen;
-}
-
-// Calling the function berekenAlleKijkRichtingen
-let kijkRichtingen = berekenAlleKijkRichtingen(scenes);
-console.log(kijkRichtingen);
-
+    
 });
