@@ -841,7 +841,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 160,
+                    "yaw": 145,
                     "type": "scene",
                     "text": "muzieklokaal",
                     "sceneId": "ml"
