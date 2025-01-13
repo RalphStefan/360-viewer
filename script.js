@@ -958,7 +958,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lo2.JPG",
             'etage': 3, 
-            'mapPosition': { 'x': 50, 'y': 100 },
+            'mapPosition': { 'x': 150, 'y': 95 },
             "hotSpots": [
                 {
                     "pitch": 20,
@@ -988,7 +988,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lo3.JPG",
             'etage': 4, 
-            'mapPosition': { 'x': 100, 'y': 100 },
+            'mapPosition': { 'x': 130, 'y': 97 },
             "hotSpots": [
 
                 {
@@ -1036,7 +1036,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s12.JPG",
             'etage': 3, 
-            'mapPosition': { 'x': 100, 'y': 100 },
+            'mapPosition': { 'x': 150, 'y': 50 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1069,7 +1069,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s14.JPG",
             'etage': 5, 
-            'mapPosition': { 'x': 50, 'y': 50 },
+            'mapPosition': { 'x': 160, 'y': 160 },
             "hotSpots": [
 
                 {
