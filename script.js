@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const scenes= {
         "i1": {
             "type": "equirectangular",
+            'info': "Ingang",
             "panorama": "images/ingang.JPG",
             'etage': 0,
-            info : "meer informatie", 
-            'info-box' : "meer informatie",
+
             'mapPosition': { 'x': 86, 'y': 184 },
             "noordPunt": 90, // Noordpunt in graden voor scene 1
             "hotSpots": [
@@ -17,16 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     "text": "Next",
                     "sceneId": "i2",
                 },
-                {
-                    "pitch": -10,
-                    "yaw": 20,
-                    "type": "scene",
-                    "type": "info", 
-                    "text": "Meer informatie over deze hotspot", 
-                    "attributes": { 
-                        "class": "custom-hotspot"
-                    }
-                }
             ]
         },
         "i2": {
@@ -1317,31 +1307,16 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Geen begin scène gedefinieerd.'); 
     };
 
-
-// Functie om de kijkrichting te berekenen
-function calculateViewDirection(noordPunt, yaw) {
-    return (noordPunt + yaw) % 360;
-}
-
-// Functie om alle kijkrichtingen te berekenen
-function calculateAllViewDirections(scenes) {
-    let viewDirections = {};
-    for (let sceneId in scenes) {
-        if (scenes.hasOwnProperty(sceneId)) {
-            let scene = scenes[sceneId];
-            viewDirections[sceneId] = [];
-            for (let hotSpot of scene.hotSpots) {
-                let viewDirection = calculateViewDirection(scene.noordPunt, hotSpot.yaw);
-                viewDirections[sceneId].push({ hotSpot: hotSpot, viewDirection: viewDirection });
-            }
-        }
-    }
-    return viewDirections;
-}
-
-// Test de eenvoudige configuratie
-let viewDirections = calculateAllViewDirections(simpleScenes);
-console.log("View Directions:", viewDirections);
-
+        // Voeg de informatieknop toe
+        const infoButton = document.createElement('div');
+        infoButton.className = 'pnlm-info-button pnlm-sprite pnlm-control';
+        infoButton.innerHTML = 'Info';
+        infoButton.addEventListener('click', function() {
+            alert('Meer informatie over deze panorama.');
+        });
     
+        // Voeg de informatieknop toe aan de container van de knoppen
+        const controlsContainer = document.querySelector('.pnlm-controls-container');
+        controlsContainer.appendChild(infoButton);
+
 });
