@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const scenes= {
         "i1": {
             "type": "equirectangular",
-            'showInfo-box': true,
             "panorama": "images/ingang.JPG",
             'etage': 0,
 
