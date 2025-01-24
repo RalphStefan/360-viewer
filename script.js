@@ -1295,6 +1295,16 @@ document.addEventListener('DOMContentLoaded', function() {
             } 
         } 
     }; 
-
+    viewer.on('scenechange', function() { 
+        const currentScene = viewer.getScene(); 
+        changeScene(currentScene); 
+    }); 
+    // Haal de scene parameter op uit de URL 
+    const urlParams = new URLSearchParams(window.location.search); 
+    const initialScene = urlParams.get('scene'); 
+    if (initialScene) { changeScene(initialScene); 
+    } else { 
+        console.error('Geen begin scène gedefinieerd.'); 
+    };
 
 });
