@@ -504,7 +504,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 145, 'y': 97 },
+            'mapPosition': { 'x': 145, 'y': 95 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -527,7 +527,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 155, 'y': 97 },
+            'mapPosition': { 'x': 155, 'y': 95 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -557,7 +557,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m3.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 165, 'y': 97 },
+            'mapPosition': { 'x': 165, 'y': 95 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -573,7 +573,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ba.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 158, 'y': 85 },
+            'mapPosition': { 'x': 158, 'y': 80 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -590,8 +590,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     "sceneId": "b9"
                 },
                 {
-                    "pitch": -10,
-                    "yaw": 0,
+                    "pitch": 5,
+                    "yaw": 20,
                     "type": "scene",
                     "text": "mediatheek",
                     "sceneId": "m2"
@@ -609,7 +609,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/mz.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 158, 'y': 25 },
+            'mapPosition': { 'x': 150, 'y': 45 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -698,7 +698,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/hvl.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 100, 'y': 100 },
+            'mapPosition': { 'x': 98, 'y': 98 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -822,7 +822,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 160,
+                    "yaw": 150,
                     "type": "scene",
                     "text": "muzieklokaal",
                     "sceneId": "ml"
@@ -960,7 +960,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lo2.JPG",
             'etage': 3, 
-            'mapPosition': { 'x': 125, 'y': 95 },
+            'mapPosition': { 'x': 128, 'y': 94 },
             "hotSpots": [
                 {
                     "pitch": 20,
@@ -990,7 +990,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lo3.JPG",
             'etage': 4, 
-            'mapPosition': { 'x': 130, 'y': 97 },
+            'mapPosition': { 'x': 135, 'y': 95 },
             "hotSpots": [
 
                 {
@@ -1038,7 +1038,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s12.JPG",
             'etage': 3, 
-            'mapPosition': { 'x': 130, 'y': 50 },
+            'mapPosition': { 'x': 145, 'y': 50 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1054,7 +1054,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s10.JPG",
             'etage': 4, 
-            'mapPosition': { 'x': 75, 'y': 97 },
+            'mapPosition': { 'x': 75, 'y': 95 },
             "hotSpots": [
 
                 {
@@ -1071,7 +1071,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s14.JPG",
             'etage': 5, 
-            'mapPosition': { 'x': 175, 'y': 175 },
+            'mapPosition': { 'x': 160, 'y': 160 },
             "hotSpots": [
 
                 {
