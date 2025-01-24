@@ -718,7 +718,7 @@ window.pannellum = function(E, g, p) {
             s.addEventListener("msfullscreenchange", d, !1),
             s.addEventListener("fullscreenchange", d, !1),
             E.addEventListener("resize", z, !1),
-            E.addEventListener("orientationchange", z, !1),
+            E.addEventListener("orientationchange", z, !1), // noordpunt??
             b.disableKeyboardCtrl || (s.addEventListener("keydown", V, !1),
             s.addEventListener("keyup", R, !1),
             s.addEventListener("blur", $, !1)),
