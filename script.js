@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
             'etage': 0,
-            'info': "meer informatie", 
+            info : "meer informatie", 
+            'info-box' : "meer informatie",
             'mapPosition': { 'x': 86, 'y': 184 },
             "noordPunt": 90, // Noordpunt in graden voor scene 1
             "hotSpots": [
