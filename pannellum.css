@@ -279,14 +279,7 @@
     vertical-align:middle;
     padding:0 5px 0 5px
 }
-.pnlm-info-button {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 10px;
-}
+
 .pnlm-error-msg{
     display:none
 }

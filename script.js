@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scenes= {
         "i1": {
             "type": "equirectangular",
-            'info': "Ingang",
+            'showInfo-box': true,
             "panorama": "images/ingang.JPG",
             'etage': 0,
 
@@ -1295,28 +1295,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } 
         } 
     }; 
-    viewer.on('scenechange', function() { 
-        const currentScene = viewer.getScene(); 
-        changeScene(currentScene); 
-    }); 
-    // Haal de scene parameter op uit de URL 
-    const urlParams = new URLSearchParams(window.location.search); 
-    const initialScene = urlParams.get('scene'); 
-    if (initialScene) { changeScene(initialScene); 
-    } else { 
-        console.error('Geen begin scène gedefinieerd.'); 
-    };
 
-        // Voeg de informatieknop toe
-        const infoButton = document.createElement('div');
-        infoButton.className = 'pnlm-info-button pnlm-sprite pnlm-control';
-        infoButton.innerHTML = 'Info';
-        infoButton.addEventListener('click', function() {
-            alert('Meer informatie over deze panorama.');
-        });
-    
-        // Voeg de informatieknop toe aan de container van de knoppen
-        const controlsContainer = document.querySelector('.pnlm-controls-container');
-        controlsContainer.appendChild(infoButton);
 
 });
