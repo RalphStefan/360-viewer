@@ -3,34 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Droneshot west</title>
+    <title>Drone-shot Zuid - Oscar Romero</title>
     <style>
-        body, html {
-            height: 100%;
+        body {
             margin: 0;
+            padding: 0;
+            min-height: 100vh;
             background-image: url('dronebeelden/droneshot2.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
         }
+
+        .hotspots-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .hotspot {
             position: absolute;
-            padding: 10px 15px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border: none;
-            border-radius: 5px;
+            padding: 12px 20px;
+            background-color: rgba(228, 30, 38, 0.9);
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: capitalize;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
+
         .hotspot:hover {
-            background-color: rgba(255, 255, 255, 1);
+            transform: scale(1.05);
+            background-color: #c41920;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .hotspot.back-entrance {
+            top: 45%;
+            left: 40%;
+        }
+
+        .hotspot.mandelazaal {
+            top: 55%;
+            left: 60%;
+        }
+
+        .hotspot.drone {
+            bottom: 5%;
+            right: 5%;
+        }
+
+        @media (max-width: 768px) {
+            .hotspot {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="hotspots">
-        <button class="hotspot" onclick="loadScene('b8')" style="bottom: 25%; right: 15%;"><h3>achteringang</h3> </button>
-        <button class="hotspot" onclick="window.location.href='droneshot1.html'" style="top: 50%; left: 5%;">Drone-shot west</button>
+    <div class="hotspots-container">
+        <button 
+            class="hotspot back-entrance" 
+            onclick="loadScene('b1')" 
+            aria-label="Ga naar achteringang">
+            Achteringang
+        </button>
+        <button 
+            class="hotspot mandelazaal" 
+            onclick="loadScene('mz')" 
+            aria-label="Ga naar Mandelazaal">
+            Mandelazaal
+        </button>
+        <button 
+            class="hotspot drone" 
+            onclick="window.location.href='droneshot1.html'" 
+            aria-label="Ga naar drone-shot noord">
+            Drone-shot noord
+        </button>
     </div>
 
     <script>
