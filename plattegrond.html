@@ -40,6 +40,23 @@
                         z-index: 3;
                         cursor: pointer;
                     }
+                    .knop {
+            text-align: center;
+            margin: 20px 0;
+        }
+		#start-vr{
+			background-color: #e41e26;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+		}
+        #start-vr:hover {
+            background-color: #c41920;
+        }
                 </style>
             </head>
             <body>
@@ -55,6 +72,17 @@
                         window.location.href = `vr.html?scene=${sceneId}`;
                     }
                 </script>
+                        <div id="link-drone">
+                            <a> 
+                                        <div class="knop">
+                            <button id="start-vr" onclick="startVR('droneshot1.html')">Hoofdingang</button>
+                        </div>
+                                <div class="knop">
+                                <button id="start-vr" onclick="startVR('begin.html')">terug naar het begin</button> 
+                                </div>
+                            </a>
+                            <script> function startVR(url) { window.location.href = url; } </script>
+                        </div>
             </body>
         </html>
         
