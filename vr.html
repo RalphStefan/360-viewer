@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title>Oscar Romero 360 Viewer</title>
     <link rel="stylesheet" href="pannellum.css">
+	<style>
+	        .knop {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #start-vr:hover {
+            background-color: #c41920;
+        }
+	</style>
 </head>
 
     <body>
@@ -25,9 +35,13 @@
             <script src="script.js"></script>
         </div>
         <div id="link-drone">
-            <a> 
+				        <div class="knop">
+            <button id="start-vr" onclick="startVR('droneshot1.html')">Hoofdingang</button>
+        </div>
+				<div class="knop">
                 <button id="start-vr" onclick="startVR('begin.html')">terug naar het begin</button> 
-            </a>
+				</div>
+
             <script> function startVR(url) { window.location.href = url; } </script>
         </div>
     </body>
