@@ -2,15 +2,55 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Oscar Romero 360 Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360° Tour - Oscar Romero</title>
     <link rel="stylesheet" href="pannellum.css">
-	<style>
-	        .knop {
-            text-align: center;
-            margin: 20px 0;
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-		#start-vr{
-			background-color: #e41e26;
+
+        .panorama-container {
+            width: 100%;
+            height: 70vh;
+            position: relative;
+        }
+
+        #mini-map {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+            background: white;
+            padding: 5px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        #watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 100;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        #watermark:hover {
+            opacity: 1;
+        }
+
+        .navigation-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #e41e26;
             color: white;
             border: none;
             padding: 12px 24px;
@@ -18,42 +58,61 @@
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s;
-		}
-        #start-vr:hover {
+        }
+
+        .button:hover {
             background-color: #c41920;
         }
-	</style>
-</head>
 
-    <body>
-        <div id="panorama" style="width: 100%; height: 500px; position: relative;">
-            <!-- Mini-map -->
-            <div id="mini-map"> 
-                <a  href="plattegrond.html" target="_blank">
-                    <img id="map-image" alt="Map">
+        @media (max-width: 768px) {
+            .navigation-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="panorama" class="panorama-container">
+            <nav id="mini-map">
+                <a href="plattegrond.html" target="_blank" aria-label="Open plattegrond">
+                    <img id="map-image" alt="Plattegrond" />
                     <div id="location-indicator"></div>
                 </a>
-            
-            </div> 
-            <!-- Watermerk -->
-            <a href="https://www.oscarromero.nl" target="_blank" id="watermark">
-                <img src="images/logo.png" alt="Watermark" style="width: 100px; height: auto;">
-            </a>
-            
-            <script src="pannellum.js"></script> 
-            <script src="script.js"></script>
-        </div>
-        <div id="link-drone">
-            <a> 
-				        <div class="knop">
-            <button id="start-vr" onclick="startVR('droneshot1.html')">Hoofdingang</button>
-        </div>
-				<div class="knop">
-                <button id="start-vr" onclick="startVR('begin.html')">terug naar het begin</button> 
-				</div>
-            </a>
-            <script> function startVR(url) { window.location.href = url; } </script>
-        </div>
-    </body>
+            </nav>
 
+            <a href="https://www.oscarromero.nl" 
+               target="_blank" 
+               id="watermark" 
+               aria-label="Bezoek Oscar Romero website">
+                <img src="images/logo.png" 
+                     alt="Oscar Romero logo" 
+                     width="100" 
+                     height="auto">
+            </a>
+        </div>
+
+        <nav class="navigation-container">
+            <button class="button" 
+                    onclick="startVR('droneshot1.html')" 
+                    aria-label="Ga naar hoofdingang">
+                Hoofdingang
+            </button>
+            <button class="button" 
+                    onclick="startVR('begin.html')" 
+                    aria-label="Terug naar begin">
+                Terug naar begin
+            </button>
+        </nav>
+    </main>
+
+    <script src="pannellum.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function startVR(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
 </html>
