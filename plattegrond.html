@@ -28,7 +28,6 @@
                         padding-right: 12px;
                         height: 90%;
                         width: 90%;
-                        margin: 0 auto;
                         padding: 20px;
                         background-image: url('dronebeelden/droneshot.png');
                         background-size: cover;
@@ -37,10 +36,13 @@
                     }
                     .map {
                         position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 90%;
+                        padding-top: 12px;
+                        padding-left:12px;
+                        padding-right: 12px;
                         height: 90%;
+                        width: 90%;
+                        padding: 20px;
+                        background-position: center;
                         z-index: 2;
                         pointer-events: none; /* Zorgt ervoor dat de achtergrond niet interactief is */
                     }
@@ -101,7 +103,7 @@
                             </a>
                             <script> function startVR(url) { window.location.href = url; } </script>
                         </div>
-                        
+                        <div>
                             <h3>muzieklokaal</h3> 
                             <p>In het muziek lokaal maak je muziek</p>
                             <h3>mediatheek</h3>
@@ -113,7 +115,7 @@
                             <h3>mandelazaal</h3>
                             <p>In de mandelazaal kun je toneelstukken opvoeren</p>
                         </div>
-                    </div>
+                </div>
             </body>
         </html>
         
