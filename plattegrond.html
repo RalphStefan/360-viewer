@@ -130,16 +130,26 @@
         .button:hover {
             background-color: #c41920;
         }
+            /* Desktop positions */
+    #gymzaal-link { top: 35%; left: 14%; }
+    #mandelazaal-link { top: 85%; left: 35%; }
+    #muzieklokaal-link { top: 40%; left: 21%; }
+    #mediatheek-link { top: 76%; left: 24%; }
+    #handvaardigheid-link { top: 53%; left: 23%; }
 
-        @media (max-width: 768px) {
+    /* Mobile positions */
+    @media (max-width: 768px) {
+        #gymzaal-link { top: 30%; left: 10%; }
+        #mandelazaal-link { top: 80%; left: 30%; }
+        #muzieklokaal-link { top: 45%; left: 25%; }
+        #mediatheek-link { top: 70%; left: 20%; }
+        #handvaardigheid-link { top: 58%; left: 28%; }
             .container {
                 padding: 10px;
             }
-            
             .button-container {
                 flex-direction: column;
             }
-            
             .button {
                 width: 100%;
             }
@@ -153,11 +163,11 @@
             <div class="map">
                 <img src="plattegrond/alles.png" alt="Plattegrond" style="width: 100%; height: 100%; object-fit: contain;">
             </div>
-            <div class="marker" onclick="loadScene('lo1')" style="top: 35%; left: 14%;" title="Gymzaal"></div>
-            <div class="marker" onclick="loadScene('mz')" style="top: 85%; left: 35%;" title="Mandelazaal"></div>
-            <div class="marker" onclick="loadScene('ml')" style="top: 40%; left: 21%;" title="Muzieklokaal"></div>
-            <div class="marker" onclick="loadScene('m1')" style="top: 76%; left: 24%;" title="Mediatheek"></div>
-            <div class="marker" onclick="loadScene('hvl')" style="top: 53%; left: 23%;" title="Handvaardigheidslokaal"></div>
+            <a href="#" class="location-link" id="gymzaal-link" onclick="loadScene('lo1')">Gymzaal</a>
+            <a href="#" class="location-link" id="mandelazaal-link" onclick="loadScene('mz')">Mandelazaal</a>
+            <a href="#" class="location-link" id="muzieklokaal-link" onclick="loadScene('ml')">Muzieklokaal</a>
+            <a href="#" class="location-link" id="mediatheek-link" onclick="loadScene('m1')">Mediatheek</a>
+            <a href="#" class="location-link" id="handvaardigheid-link" onclick="loadScene('hvl')">Handvaardigheid</a>
         </div>
 
         <div class="button-container">
