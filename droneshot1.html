@@ -3,35 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Droneshot west</title>
+    <title>Drone-shot Noord - Oscar Romero</title>
     <style>
-        body, html {
-            height: 100%;
+        body {
             margin: 0;
+            padding: 0;
+            min-height: 100vh;
             background-image: url('dronebeelden/droneshot1.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
         }
+
+        .hotspots-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .hotspot {
             position: absolute;
-            padding: 10px 15px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border: none;
-            border-radius: 5px;
+            padding: 12px 20px;
+            background-color: rgba(228, 30, 38, 0.9);
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: capitalize;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
+
         .hotspot:hover {
-            background-color: rgba(255, 255, 255, 1);
+            transform: scale(1.05);
+            background-color: #c41920;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .hotspot.main-entrance {
+            top: 40%;
+            left: 60%;
+            font-size: 18px;
+            padding: 15px 25px;
+        }
+
+        .hotspot.gym {
+            top: 40%;
+            left: 30%;
+        }
+
+        .hotspot.drone {
+            top: 50%;
+            right: 5%;
+        }
+
+        @media (max-width: 768px) {
+            .hotspot {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            .hotspot.main-entrance {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="hotspots">
-        <button class="hotspot" onclick="loadScene('i1')" style="top: 40%; left: 60%;"><h3>Hoofdingang</h3></button>
-        <button class="hotspot" onclick="loadScene('lo1')" style="top: 40%; left: 30%;">gymzaal</button>
-        <button class="hotspot" onclick="window.location.href='droneshot2.html'" style="top: 50%; right: 5%;">Drone-shot zuid</button>
+    <div class="hotspots-container">
+        <button 
+            class="hotspot main-entrance" 
+            onclick="loadScene('i1')" 
+            aria-label="Ga naar hoofdingang">
+            Hoofdingang
+        </button>
+        <button 
+            class="hotspot gym" 
+            onclick="loadScene('lo1')" 
+            aria-label="Ga naar gymzaal">
+            Gymzaal
+        </button>
+        <button 
+            class="hotspot drone" 
+            onclick="window.location.href='droneshot2.html'" 
+            aria-label="Ga naar drone-shot zuid">
+            Drone-shot zuid
+        </button>
     </div>
 
     <script>
