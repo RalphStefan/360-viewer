@@ -50,44 +50,6 @@
             z-index: 2;
         }
 
-        .marker {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: #e41e26;
-            border: 2px solid white;
-            border-radius: 50%;
-            z-index: 3;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .marker:hover {
-            transform: scale(1.2);
-            box-shadow: 0 0 10px rgba(228, 30, 38, 0.5);
-        }
-
-        .marker::after {
-            content: attr(title);
-            position: absolute;
-            bottom: 120%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 8px 12px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            border-radius: 4px;
-            font-size: 14px;
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.3s;
-            z-index: 4;
-        }
-
-        .marker:hover::after {
-            opacity: 1;
-        }
-
         .info-section {
             margin-top: 20px;
             background-color: white;
@@ -130,6 +92,24 @@
         .button:hover {
             background-color: #c41920;
         }
+        .location-link {
+        position: absolute;
+        padding: 8px 12px;
+        background-color: #e41e26;
+        color: white;
+        border: 2px solid white;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 3;
+    }
+
+    .location-link:hover {
+        transform: scale(1.1);
+        background-color: #c41920;
+    }
             /* Desktop positions */
     #gymzaal-link { top: 35%; left: 14%; }
     #mandelazaal-link { top: 85%; left: 35%; }
