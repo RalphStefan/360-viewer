@@ -106,6 +106,57 @@
         z-index: 3;
     }
 
+    .location-link {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e41e26;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.location-link span {
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Desktop hover effect */
+@media (min-width: 769px) {
+    .location-link:hover {
+        transform: scale(1.2);
+        background-color: #c41920;
+    }
+
+    .location-link:hover span {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* Mobile permanent labels */
+@media (max-width: 768px) {
+    .location-link span {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
     .location-link:hover {
         transform: scale(1.1);
         background-color: #c41920;
@@ -143,11 +194,11 @@
             <div class="map">
                 <img src="plattegrond/alles.png" alt="Plattegrond" style="width: 100%; height: 100%; object-fit: contain;">
             </div>
-            <a href="#" class="location-link" id="gymzaal-link" onclick="loadScene('lo1')">Gymzaal</a>
-            <a href="#" class="location-link" id="mandelazaal-link" onclick="loadScene('mz')">Mandelazaal</a>
-            <a href="#" class="location-link" id="muzieklokaal-link" onclick="loadScene('ml')">Muzieklokaal</a>
-            <a href="#" class="location-link" id="mediatheek-link" onclick="loadScene('m1')">Mediatheek</a>
-            <a href="#" class="location-link" id="handvaardigheid-link" onclick="loadScene('hvl')">Handvaardigheid</a>
+            <a href="#" class="location-link" id="gymzaal-link" onclick="loadScene('lo1')"><span>Gymzaal</span></a>
+            <a href="#" class="location-link" id="mandelazaal-link" onclick="loadScene('mz')"><span>Mandelazaal</span></a>
+            <a href="#" class="location-link" id="muzieklokaal-link" onclick="loadScene('ml')"><span>Muzieklokaal</span></a>
+            <a href="#" class="location-link" id="mediatheek-link" onclick="loadScene('m1')"><span>Mediatheek</span></a>
+            <a href="#" class="location-link" id="handvaardigheid-link" onclick="loadScene('hvl')"><span>Handvaardigheid</span></a>
         </div>
 
         <div class="button-container">
