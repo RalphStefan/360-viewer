@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b7.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 177, 'y': 105 },
+            'mapPosition': { 'x': 168, 'y': 105 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "b8": {
             "type": "equirectangular",
             "panorama": "images/b8.JPG",'etage': 0, 
-            'mapPosition': { 'x': 175, 'y': 104 },
+            'mapPosition': { 'x': 178, 'y': 104 },
             "noordPunt": 90, 
             "hotSpots": [
                 {
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b9.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 175, 'y': 60 },
+            'mapPosition': { 'x': 177, 'y': 63 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 90,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "b8"
                 },
                 {
@@ -315,28 +315,28 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b10.JPG",
             'etage': 0, 
-            'mapPosition': { 'x':172, 'y': 25 },
+            'mapPosition': { 'x':174, 'y': 28 },
             "noordPunt": 60,
             "hotSpots": [
                 {
                     "pitch": -10,
                     "yaw": -90,
                     "type": "scene",
-                    "text": "Next",
+                    "text": "",
                     "sceneId": "b11"
                 },
                 {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "b9"
                 },
                 {
                     "pitch": -10,
                     "yaw": 160,
                     "type": "scene",
-                    "text": "",
+                    "text": "Leerplein",
                     "sceneId": "0,49"
                 }
             ]
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b11.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 140, 'y': 40 },
+            'mapPosition': { 'x': 145, 'y': 45 },
             "noordPunt": 150,
             "hotSpots": [
                 {
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b12.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 130, 'y': 55 },
+            'mapPosition': { 'x': 135, 'y': 56 },
             "noordPunt": 150,
             "hotSpots": [
                 {
@@ -405,7 +405,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b13.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 120, 'y':60 },
+            'mapPosition': { 'x': 124, 'y':62 },
             "noordPunt": 330,
             "hotSpots": [
                 {
