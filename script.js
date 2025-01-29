@@ -101,14 +101,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -150,
+                    "yaw": -140,
                     "type": "scene",
                     "text": "naar boven",
                     "sceneId": "e1"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -5,
+                    "yaw": -130,
                     "type": "scene",
                     "text": "Onderbouw aula",
                     "sceneId": "oba5"
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b4.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 118, 'y': 128 },
+            'mapPosition': { 'x': 123, 'y': 130 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
@@ -187,12 +187,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b5.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 136, 'y': 128 },
+            'mapPosition': { 'x': 139, 'y': 131 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 100,
+                    "yaw": 95,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b6"
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b6.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 141, 'y': 107 },
+            'mapPosition': { 'x': 146, 'y': 107 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
@@ -322,12 +322,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b10.JPG",
             'etage': 0, 
-            'mapPosition': { 'x':174, 'y': 28 },
+            'mapPosition': { 'x':176, 'y': 30 },
             "noordPunt": 60,
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": -90,
+                    "yaw": -85,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b11"
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 160,
+                    "yaw": 145,
                     "type": "scene",
                     "text": "Leerplein",
                     "sceneId": "0,49"
@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b14.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 105, 'y': 85 },
+            'mapPosition': { 'x': 108, 'y': 88 },
             "noordPunt": 270,
             "hotSpots": [
                 {
@@ -472,7 +472,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b15.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 105, 'y': 120 },
+            'mapPosition': { 'x': 108, 'y': 121 },
             "noordPunt": 270,
             "hotSpots": [
                 {
@@ -484,7 +484,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -176,
+                    "yaw": -174,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b14"
@@ -726,7 +726,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/0,49.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x':180, 'y': 38 },
             "hotSpots": [
                 {
                     "pitch": -10,
