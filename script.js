@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 86, 'y': 155 },
+            'mapPosition': { 'x': 91, 'y': 158 },
             "noordPunt": 90, // Noordpunt in graden voor scene 
             "hotSpots": [
                 {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 86, 'y': 150 },
+            'mapPosition': { 'x': 93, 'y': 151 },
             "noordPunt": 90, 
             "hotSpots": [
                 {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 95, 'y': 140 },
+            'mapPosition': { 'x': 103, 'y': 140 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
@@ -105,6 +105,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     "type": "scene",
                     "text": "naar boven",
                     "sceneId": "e1"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -5,
+                    "type": "scene",
+                    "text": "Onderbouw aula",
+                    "sceneId": "oba5"
                 }
             ]
         },
@@ -112,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b3.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 96, 'y': 128 },
+            'mapPosition': { 'x': 99, 'y': 132 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
@@ -131,14 +138,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 80,
+                    "yaw": 90,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b2"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -170,
+                    "yaw": -165,
                     "type": "scene",
                     "text": "Onderbouw aula",
                     "sceneId": "oba5"
@@ -470,21 +477,21 @@ document.addEventListener('DOMContentLoaded', function() {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 10,
+                    "yaw": 85,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b3"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 180,
+                    "yaw": -176,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b14"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -10,
+                    "yaw": -20,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b4"
@@ -743,7 +750,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/oba1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 70, 'y': 145 },
+            'mapPosition': { 'x': 70, 'y': 150 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -773,7 +780,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/oba2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 56, 'y': 148 },
+            'mapPosition': { 'x': 61, 'y': 150 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -802,32 +809,32 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/oba3.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 55, 'y': 130 },
+            'mapPosition': { 'x': 61, 'y': 132 },
             "hotSpots": [
                 {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "oba4"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 150,
+                    "yaw": 140,
                     "type": "scene",
-                    "text": "muzieklokaal",
+                    "text": "Muzieklokaal",
                     "sceneId": "ml"
                 },
                 {
                     "pitch": -10,
                     "yaw": -80,
                     "type": "scene",
-                    "text": "rerug",
+                    "text": "",
                     "sceneId": "oba2"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -20,
+                    "yaw": -35,
                     "type": "scene",
                     "text": "gymzalen",
                     "sceneId": "lo1"
@@ -839,7 +846,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/oba4.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 70, 'y': 128 },
+            'mapPosition': { 'x': 71, 'y': 133 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -850,7 +857,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -25,
+                    "yaw": -30,
                     "type": "scene",
                     "text": "",
                     "sceneId": "oba3"
@@ -869,27 +876,27 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/oba5.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 83, 'y': 125 },
+            'mapPosition': { 'x': 83, 'y': 127 },
             "hotSpots": [
                 {
                     "pitch": -10,
                     "yaw": 10,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "b3"
                 },
                 {
                     "pitch": -10,
-                    "yaw": 30,
+                    "yaw": 50,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "b2"
                 },
                 {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "oba4"
                 },    
             ]
@@ -899,13 +906,13 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ml.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 65, 'y':110 },
+            'mapPosition': { 'x': 68, 'y':117 },
             "hotSpots": [
                 {
                     "pitch": -10,
                     "yaw": 25,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "Aula",
                     "sceneId": "oba4"
                 },
                 
@@ -915,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lo1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 45, 'y': 140 },
+            'mapPosition': { 'x': 47, 'y': 142 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -951,7 +958,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lo2.JPG",
             'etage': 3, 
-            'mapPosition': { 'x': 128, 'y': 94 },
+            'mapPosition': { 'x': 133, 'y': 96 },
             "hotSpots": [
                 {
                     "pitch": 20,
@@ -961,8 +968,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     "sceneId": "lo3"
                 },
                 {
-                    "pitch": -20,
-                    "yaw": 0,
+                    "pitch": -30,
+                    "yaw": 5,
                     "type": "scene",
                     "text": "naar beneden",
                     "sceneId": "lo1"
@@ -981,11 +988,11 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lo3.JPG",
             'etage': 4, 
-            'mapPosition': { 'x': 135, 'y': 95 },
+            'mapPosition': { 'x': 140, 'y': 97 },
             "hotSpots": [
 
                 {
-                    "pitch": -20,
+                    "pitch": -35,
                     "yaw": 0,
                     "type": "scene",
                     "text": "naar beneden",
@@ -1012,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s06.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 20, 'y': 125 },
+            'mapPosition': { 'x': 25, 'y': 130 },
             "hotSpots": [
 
                 {
@@ -1062,7 +1069,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s14.JPG",
             'etage': 5, 
-            'mapPosition': { 'x': 160, 'y': 160 },
+            'mapPosition': { 'x': 155, 'y': 150 },
             "hotSpots": [
 
                 {
