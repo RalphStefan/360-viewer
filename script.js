@@ -630,7 +630,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lg1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 105, 'y': 155 },
+            'mapPosition': { 'x': 107, 'y': 157 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -659,20 +659,20 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lg2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 108, 'y': 172 },
+            'mapPosition': { 'x': 111, 'y': 175 },
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 160,
+                    "yaw": 140,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "lg1"
                 },                
                 {
                     "pitch": 10,
                     "yaw": -10,
                     "type": "scene",
-                    "text": "boven",
+                    "text": "naar boven",
                     "sceneId": "e4"
                 },
             ]
@@ -687,7 +687,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -10,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "lg1"
                 },                
             ]
@@ -702,7 +702,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 35,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "b14"
                 },
             ]
@@ -717,7 +717,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 5,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "b6"
                 },
             ]
@@ -756,7 +756,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "oba2"
                 },
                 {
@@ -910,7 +910,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 25,
+                    "yaw": 30,
                     "type": "scene",
                     "text": "Aula",
                     "sceneId": "oba4"
@@ -1036,7 +1036,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/s12.JPG",
             'etage': 3, 
-            'mapPosition': { 'x': 145, 'y': 50 },
+            'mapPosition': { 'x': 147, 'y': 52 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1139,13 +1139,13 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e2.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 50, 'y': 130 },
+            'mapPosition': { 'x': 52, 'y': 132 },
             "hotSpots": [
                 {
                     "pitch": -10,
                     "yaw": -5,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "e3"
                 },
                 {
@@ -1159,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "e5"
                 },
                 {
@@ -1176,21 +1176,21 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e3.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 52, 'y':158 },
+            'mapPosition': { 'x': 55, 'y':158 },
             "hotSpots": [
 
                 {
                     "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "e4"
                 },                
                 {
                     "pitch": -10,
-                    "yaw": -175,
+                    "yaw": -170,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "e2"
                 },
                 
@@ -1200,7 +1200,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e4.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 49, 'y':175 },
+            'mapPosition': { 'x': 59, 'y':173 },
             "hotSpots": [
 
                 {
@@ -1214,7 +1214,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "e3"
                 },
                 
@@ -1224,7 +1224,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e5.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 51, 'y':95 },
+            'mapPosition': { 'x': 53, 'y':93 },
             "hotSpots": [
 
                 {
