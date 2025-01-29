@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "b8": {
             "type": "equirectangular",
             "panorama": "images/b8.JPG",'etage': 0, 
-            'mapPosition': { 'x': 178, 'y': 104 },
+            'mapPosition': { 'x': 180, 'y': 106 },
             "noordPunt": 90, 
             "hotSpots": [
                 {
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b9.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 177, 'y': 63 },
+            'mapPosition': { 'x': 180, 'y': 63 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
