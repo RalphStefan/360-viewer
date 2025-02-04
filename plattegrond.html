@@ -167,6 +167,8 @@
     #muzieklokaal-link { top: 40%; left: 21%; }
     #mediatheek-link { top: 76%; left: 24%; }
     #handvaardigheid-link { top: 53%; left: 23%; }
+    #leerplein-link { top: 45%; left: 30%; }
+
 
     /* Mobile positions */
     @media (max-width: 768px) {
@@ -175,6 +177,7 @@
         #muzieklokaal-link { top: 41%; left: 25%; }
         #mediatheek-link { top: 70%; left: 20%; }
         #handvaardigheid-link { top: 58%; left: 28%; }
+        #leerplein-link { top: 48%; left: 35%; }
             .container {
                 padding: 10px;
             }
@@ -199,6 +202,7 @@
             <a href="#" class="location-link" id="muzieklokaal-link" onclick="loadScene('ml')"><span>Muzieklokaal</span></a>
             <a href="#" class="location-link" id="mediatheek-link" onclick="loadScene('m1')"><span>Mediatheek</span></a>
             <a href="#" class="location-link" id="handvaardigheid-link" onclick="loadScene('hvl')"><span>Handvaardigheid</span></a>
+            <a href="#" class="location-link" id="leerplein-link" onclick="loadScene('lpv')"><span>Leerplein</span></a>
         </div>
 
         <div class="button-container">
@@ -207,25 +211,21 @@
         </div>
 
         <div class="info-section">
-            <div class="location-info">
-                <h3>
-                    <a href="https://oscarromero.nl/onderwijs/muziek/" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       style="color: inherit; text-decoration: none;">
+            <a href="https://oscarromero.nl/onderwijs/muziek/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               style="color: inherit; text-decoration: none;">
+                <div class="location-info">
+                    <h3>
                         Muzieklokaal
                         <span style="font-size: 0.8em; margin-left: 5px;">↗</span>
-                    </a>
-                </h3>
-                <p>
-                    <a href="https://oscarromero.nl/onderwijs/muziek/" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       style="color: inherit; text-decoration: none;">
+                    </h3>
+                    <p>
                         In het muzieklokaal maak je muziek en leer je over verschillende instrumenten en muziekstijlen.
-                    </a>
-                </p>
-            </div>
+                    </p>
+                </div>
+            </a>
+        </div>
             <a href="https://oscarromero.nl/ondersteuning/mediatheek/" 
    target="_blank" 
    rel="noopener noreferrer" 
@@ -240,50 +240,59 @@
         </p>
     </div>
 </a>
-            <div class="location-info">
-                <h3>
-                    <a href="https://oscarromero.nl/onderwijs/beeldende-vorming/" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       style="color: inherit; text-decoration: none;">
+            <a href="https://oscarromero.nl/onderwijs/beeldende-vorming/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               style="color: inherit; text-decoration: none;">
+                <div class="location-info">
+                    <h3>
                         Handvaardigheid
                         <span style="font-size: 0.8em; margin-left: 5px;">↗</span>
-                    </a>
-                </h3>
-                <p>
-                    <a href="https://oscarromero.nl/onderwijs/beeldende-vorming/" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       style="color: inherit; text-decoration: none;">
+                    </h3>
+                    <p>
                         In het handvaardigheidslokaal kun je creatief aan de slag met verschillende materialen en technieken.
-                    </a>
-                </p>
-            </div>
-            <div class="location-info">
-                <h3>
-                    <a href="https://oscarromero.nl/ons-onderwijs/op-oscar/sport/" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       style="color: inherit; text-decoration: none;">
+                    </p>
+                </div>
+            </a>
+            <a href="https://oscarromero.nl/ons-onderwijs/op-oscar/sport/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               style="color: inherit; text-decoration: none;">
+                <div class="location-info">
+                    <h3>
                         Gymzaal
                         <span style="font-size: 0.8em; margin-left: 5px;">↗</span>
-                    </a>
-                </h3>
-                <p>
-                    <a href="https://oscarromero.nl/ons-onderwijs/op-oscar/sport/" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       style="color: inherit; text-decoration: none;">
+                    </h3>
+                    <p>
                         In de gymzaal worden verschillende sporten beoefend en kun je werken aan je conditie en motoriek.
-                    </a>
-                </p>
-            </div>
+                    </p>
+                </div>
+            </a>
             <div class="location-info">
                 <h3>Mandelazaal</h3>
                 <p>De Mandela Zaal op Oscar Romero is een centrale plek in de school, vernoemd naar Nelson Mandela. Deze ruimte wordt gebruikt voor diverse evenementen, bijeenkomsten en voorstellingen. Het is een plek waar leerlingen samenkomen om te leren en te vieren, en waar de waarden van vrede en gelijkheid, waarvoor Mandela stond, worden weerspiegeld.
                 </p>
             </div>
         </div>
+    </div>
+    <div class="info-section">
+        <a href="#" onclick="loadScene('oba2'); return false;" 
+           style="color: inherit; text-decoration: none;">
+            <div class="location-info">
+                <h3>
+                    Aula's
+                </h3>
+                <p>
+                    De aula's bij het Tabor College Oscar Romero zijn moderne en uitnodigende ruimtes. 
+                    Leerlingen komen hier samen om te pauzeren, te praten en aan groepsopdrachten te werken. 
+                    De aula's worden ook gebruikt voor schoolbijeenkomsten en evenementen.
+                </p>
+                <div class="button-container" style="margin-top: 15px;">
+                    <button class="button" onclick="loadScene('oba2')">Onderbouw aula</button>
+                    <button class="button" onclick="loadScene('ba')">Bovenbouw aula</button>
+                </div>
+            </div>
+        </a>
     </div>
 
     <script>

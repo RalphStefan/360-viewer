@@ -1286,43 +1286,63 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
     };
-    const viewer = pannellum.viewer('panorama', { 
-        default: { 
-            firstScene: 'i1' 
-        }, 
-        scenes: scenes 
-    }); 
-    
-    window.changeScene = function(sceneId) { 
-        const scene = scenes[sceneId]; 
-        if (scene) { 
-            console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`); 
-            viewer.loadScene(sceneId); 
+    // Function to calculate view direction
+    function calculateInitialYaw(fromScene, toScene, hotspotYaw) {
+        const sourceNorth = fromScene.noordPunt || 0;
+        const targetNorth = toScene.noordPunt || 0;
+        return ((hotspotYaw + sourceNorth - targetNorth) % 360 + 360) % 360;
+    }
 
-            const mapImage = document.getElementById('map-image'); 
+    // Initialize viewer
+    const viewer = pannellum.viewer('panorama', {
+        default: { 
+            firstScene: 'i1'
+        },
+        scenes: scenes
+    });
+
+    // Handle scene changes
+    window.changeScene = function(sceneId, sourceSceneId, hotspotYaw) {
+        const scene = scenes[sceneId];
+        if (scene) {
+            console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`);
+            
+            // Calculate initial view direction if we have source info
+            if (sourceSceneId && hotspotYaw !== undefined) {
+                const sourceScene = scenes[sourceSceneId];
+                const initialYaw = calculateInitialYaw(sourceScene, scene, hotspotYaw);
+                viewer.loadScene(sceneId, null, initialYaw);
+            } else {
+                viewer.loadScene(sceneId);
+            }
+
+            // Update mini-map
+            const mapImage = document.getElementById('map-image');
             const locationIndicator = document.getElementById('location-indicator');
-            if (mapImage) { 
-                const mapSrc = `plattegrond/etage_${scene.etage}.png`; 
-                console.log(`Changing map to: ${mapSrc}`); 
-                mapImage.src = mapSrc; 
-                // Update locatie-indicator positie 
-                const { x, y } = scene.mapPosition; 
-                locationIndicator.style.left = `${x}px`; 
+            if (mapImage) {
+                const mapSrc = `plattegrond/etage_${scene.etage}.png`;
+                console.log(`Changing map to: ${mapSrc}`);
+                mapImage.src = mapSrc;
+                
+                const { x, y } = scene.mapPosition;
+                locationIndicator.style.left = `${x}px`;
                 locationIndicator.style.top = `${y}px`;
-            } 
-        } 
-    }; 
-    viewer.on('scenechange', function() { 
-        const currentScene = viewer.getScene(); 
-        changeScene(currentScene); 
-    }); 
-    // Haal de scene parameter op uit de URL 
-    const urlParams = new URLSearchParams(window.location.search); 
-    const initialScene = urlParams.get('scene'); 
-    if (initialScene) { changeScene(initialScene); 
-    } else { 
-        console.error('Geen begin scène gedefinieerd.'); 
+            }
+        }
     };
 
-    viewer.loadScene(sceneId, 'same', scenes[sceneId].noordPunt + scenes[sceneId].initialYaw);
+    // Listen for scene changes
+    viewer.on('scenechange', function() {
+        const currentScene = viewer.getScene();
+        changeScene(currentScene);
+    });
+
+    // Handle initial scene from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialScene = urlParams.get('scene');
+    if (initialScene) {
+        changeScene(initialScene);
+    } else {
+        console.error('Geen begin scène gedefinieerd.');
+    }
 });
