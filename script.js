@@ -507,6 +507,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/m1.JPG",
             'etage': 0, 
             'mapPosition': { 'x': 145, 'y': 95 },
+            "title": "Mediatheek",
+            "info": "In de mediatheek kun je boeken lenen, studeren en gebruik maken van computers voor onderzoek.<br><br><a href='https://oscarromero.nl/ondersteuning/mediatheek/' target='_blank' style='color: white;'>Meer informatie →</a>",
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -551,6 +553,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     "type": "scene",
                     "text": "",
                     "sceneId": "m1"
+                },
+                {
+                    "pitch": 10,  // Position above eye level
+                    "yaw": 0,     // Center of view
+                    "type": "info",
+                    "cssClass": "custom-hotspot",
+                    "createTooltipFunc": hotspot,
+                    "createTooltipArgs": {
+                        "title": "Mediatheek",
+                        "text": "In de mediatheek kun je boeken lenen, studeren en gebruik maken van computers voor onderzoek.",
+                        "url": "https://oscarromero.nl/ondersteuning/mediatheek/"
+                    }
                 }
             ]
         },
