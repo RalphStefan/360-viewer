@@ -1345,4 +1345,5 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Geen begin scène gedefinieerd.');
     }
+
 });
