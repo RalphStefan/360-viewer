@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             'mapPosition': { 'x': 86, 'y': 184 },
             "noordPunt": 90, // Noordpunt in graden voor scene 1
+            "initialYaw": 180,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'etage': 0, 
             'mapPosition': { 'x': 91, 'y': 158 },
             "noordPunt": 90, // Noordpunt in graden voor scene 
+            "initialYaw": 180,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -47,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'etage': 0, 
             'mapPosition': { 'x': 93, 'y': 151 },
             "noordPunt": 90, 
+            "initialYaw": 180,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -77,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'etage': 0, 
             'mapPosition': { 'x': 103, 'y': 140 },
             "noordPunt": 180, 
+            "initialYaw": 180,
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1320,4 +1324,5 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Geen begin scène gedefinieerd.'); 
     };
 
+    viewer.loadScene(sceneId, 'same', scenes[sceneId].noordPunt + scenes[sceneId].initialYaw);
 });
