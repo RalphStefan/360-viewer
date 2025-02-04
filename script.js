@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "Naar binnen",
+                    "text": "Next",
                     "sceneId": "i2",
                 },
             ]
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "buiten",
+                    "text": "Naar buiten",
                     "sceneId": "i1"
                 }
             ],
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "i2"
                 }
             ]
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -140,
                     "type": "scene",
-                    "text": "naar boven",
+                    "text": "Naar boven",
                     "sceneId": "e1"
                 },
                 {
@@ -126,14 +126,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 10,
                     "type": "scene",
-                    "text": "",
+                    "text": "rechts",
                     "sceneId": "b4"
                 },
                 {
                     "pitch": -10,
                     "yaw": -20,
                     "type": "scene",
-                    "text": "",
+                    "text": "links",
                     "sceneId": "b15"
                 },
                 {
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 175,
                     "type": "scene",
-                    "text": "aula",
+                    "text": "Bovenbouw aula",
                     "sceneId": "ba"
                 }
             ]
@@ -389,14 +389,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -175,
                     "type": "scene",
-                    "text": "Next",
+                    "text": "",
                     "sceneId": "b13"
                 },
                 {
                     "pitch": -10,
                     "yaw": 100,
                     "type": "scene",
-                    "text": "bovenbouw aula",
+                    "text": "Bovenbouw aula",
                     "sceneId": "ba"
                 },
                 {
@@ -419,14 +419,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "Next",
+                    "text": "",
                     "sceneId": "b14"
                 },
                 {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "b12"
                 }
             ]
@@ -456,14 +456,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 60,
                     "type": "scene",
-                    "text": "handvaardigheid",
+                    "text": "Handvaardigheid",
                     "sceneId": "hvl"
                 },
                 {
                     "pitch": -10,
                     "yaw": 95,
                     "type": "scene",
-                    "text": "naar boven",
+                    "text": "Naar boven",
                     "sceneId": "e5"
                 }
             ]
@@ -508,14 +508,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "next",
+                    "text": "",
                     "sceneId": "m2"
                 },
                 {
                     "pitch": -10,
                     "yaw": -80,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "b6"
                 }
             ]
@@ -531,21 +531,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 170,
                     "type": "scene",
-                    "text": "next",
+                    "text": "",
                     "sceneId": "m3"
                 },
                 {
                     "pitch": -10,
                     "yaw":80,
                     "type": "scene",
-                    "text": "aula",
+                    "text": "Bovenbouw aula",
                     "sceneId": "ba"
                 },
                 {
                     "pitch": -10,
                     "yaw": -20,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "m1"
                 }
             ]
@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 10,
                     "type": "scene",
-                    "text": "Back",
+                    "text": "",
                     "sceneId": "m2"
                 }
             ]
@@ -591,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": 5,
                     "yaw": 20,
                     "type": "scene",
-                    "text": "mediatheek",
+                    "text": "Mediatheek",
                     "sceneId": "m2"
                 },
                 {
@@ -613,7 +613,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -35,
                     "type": "scene",
-                    "text": "aula",
+                    "text": "Bovenbouw aula",
                     "sceneId": "ba"
                 },
                 {
@@ -650,7 +650,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 90,
                     "type": "scene",
-                    "text": "lerarenkamer",
+                    "text": "leraren kamer",
                     "sceneId": "lk"
                 }
             ]
@@ -672,7 +672,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": 10,
                     "yaw": -10,
                     "type": "scene",
-                    "text": "naar boven",
+                    "text": "boven",
                     "sceneId": "e4"
                 },
             ]
@@ -681,7 +681,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lk.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 117, 'y': 170 },
+            'mapPosition': { 'x': 119, 'y': 171 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -711,13 +711,13 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/tuin.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 150, 'y': 100 },
+            'mapPosition': { 'x': 250, 'y': 250 },
             "hotSpots": [
                 {
                     "pitch": -10,
                     "yaw": 5,
                     "type": "scene",
-                    "text": "",
+                    "text": "terug",
                     "sceneId": "b6"
                 },
             ]
@@ -763,15 +763,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "ingang",
+                    "text": "Ingang",
                     "sceneId": "b2"
                 },
                 {
                     "pitch": 20,
                     "yaw": 150,
                     "type": "scene",
-                    "text": "naar boven",
-                    "sceneId": "eoba1"
+                    "text": "Naar boven",
+                    "sceneId": "eoba"
                 }
                 
             ]
@@ -800,7 +800,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 30,
                     "type": "scene",
-                    "text": "gymzalen",
+                    "text": "Gymzalen",
                     "sceneId": "lo1"
                 },
             ]
@@ -836,7 +836,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -35,
                     "type": "scene",
-                    "text": "gymzalen",
+                    "text": "Gymzalen",
                     "sceneId": "lo1"
                 },
                 
@@ -864,9 +864,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
+                    "yaw": -90,
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "oba2"
+                },
+                {
+                    "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "muzieklokaal",
+                    "text": "Muzieklokaal",
                     "sceneId": "ml"
                 }
                 
@@ -912,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 30,
                     "type": "scene",
-                    "text": "Aula",
+                    "text": "terug",
                     "sceneId": "oba4"
                 },
                 
@@ -928,28 +935,28 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 40,
                     "type": "scene",
-                    "text": "aula",
+                    "text": "Aula",
                     "sceneId": "oba2"
                 },
                 {
                     "pitch": -10,
                     "yaw": -20,
                     "type": "scene",
-                    "text": "aula",
+                    "text": "Aula",
                     "sceneId": "oba3"
                 },
                 {
                     "pitch": 10,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "naar boven",
+                    "text": "Naar boven",
                     "sceneId": "lo2"
                 },
                 {
                     "pitch": -10,
                     "yaw": -130,
                     "type": "scene",
-                    "text": "gymzaal s06",
+                    "text": "Gymzaal s06",
                     "sceneId": "s06"
                 }
             ]
@@ -964,21 +971,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": 20,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "naar boven",
+                    "text": "Naar boven",
                     "sceneId": "lo3"
                 },
                 {
                     "pitch": -30,
                     "yaw": 5,
                     "type": "scene",
-                    "text": "naar beneden",
+                    "text": "Naar beneden",
                     "sceneId": "lo1"
                 },
                 {
                     "pitch": -10,
                     "yaw": -90,
                     "type": "scene",
-                    "text": "sportzaal 1",
+                    "text": "Sportzaal 1",
                     "sceneId": "s08"
                 }
                 
@@ -995,21 +1002,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -35,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "naar beneden",
+                    "text": "Naar beneden",
                     "sceneId": "lo2"
                 },
                 {
                     "pitch": 20,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "sportzaal 2",
+                    "text": "Sportzaal 2",
                     "sceneId": "s14"
                 },
                 {
                     "pitch": -10,
                     "yaw": -160,
                     "type": "scene",
-                    "text": "gymzaal s10",
+                    "text": "Gymzaal s10",
                     "sceneId": "s10"
                 }
                 
@@ -1026,7 +1033,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -170,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "lo1"
                 },
                 
@@ -1042,7 +1049,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -160,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "lo2"
                 },
                 
@@ -1059,7 +1066,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "lo3"
                 },
                 
@@ -1076,7 +1083,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": -160,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "lo3"
                 },
                 
@@ -1086,20 +1093,20 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/eoba.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 21, 'y': 138 },
+            'mapPosition': { 'x': 26, 'y': 140 },
             "hotSpots": [
                 {
                     "pitch": -30,
                     "yaw": 90,
                     "type": "scene",
-                    "text": "naar beneden",
+                    "text": "Naar beneden",
                     "sceneId": "oba1"
                 },
                 {
                     "pitch": -10,
-                    "yaw": -45,
+                    "yaw": -80,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "e1"
                 },
                 
@@ -1109,27 +1116,27 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e1.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 22, 'y': 130 },
+            'mapPosition': { 'x': 27, 'y': 135 },
             "hotSpots": [
                 {
                     "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "verder",
+                    "text": "",
                     "sceneId": "e2"
                 },
                                 {
                     "pitch": -10,
                     "yaw": 100,
                     "type": "scene",
-                    "text": "onderbouw aula",
+                    "text": "Onderbouw aula",
                     "sceneId": "eoba"
                 },  
                 {
                     "pitch": -20,
                     "yaw": -170,
                     "type": "scene",
-                    "text": "naar beneden",
+                    "text": "Naar beneden",
                     "sceneId": "b3"
                 },
                 
@@ -1166,7 +1173,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 120,
                     "type": "scene",
-                    "text": "leerplein",
+                    "text": "Leerplein",
                     "sceneId": "lpv"
                 }
                 
@@ -1176,7 +1183,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e3.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 55, 'y':158 },
+            'mapPosition': { 'x': 52, 'y':158 },
             "hotSpots": [
 
                 {
@@ -1188,7 +1195,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },                
                 {
                     "pitch": -10,
-                    "yaw": -170,
+                    "yaw": -175,
                     "type": "scene",
                     "text": "",
                     "sceneId": "e2"
@@ -1200,14 +1207,14 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e4.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 59, 'y':173 },
+            'mapPosition': { 'x': 49, 'y':175 },
             "hotSpots": [
 
                 {
                     "pitch": -10,
                     "yaw": -20,
                     "type": "scene",
-                    "text": "naar beneden",
+                    "text": "Naar beneden",
                     "sceneId": "lg2"
                 },                
                 {
@@ -1224,21 +1231,21 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e5.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 53, 'y':93 },
+            'mapPosition': { 'x': 51, 'y':95 },
             "hotSpots": [
 
                 {
                     "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "e2"
                 },                
                 {
                     "pitch": -10,
                     "yaw": 90,
                     "type": "scene",
-                    "text": "naar beneden",
+                    "text": "Naar beneden",
                     "sceneId": "b14"
                 },
                 
@@ -1248,21 +1255,21 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lpv.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 35, 'y': 120 },
+            'mapPosition': { 'x': 39, 'y': 125 },
             "hotSpots": [
 
                 {
                     "pitch": -10,
                     "yaw": -20,
                     "type": "scene",
-                    "text": "terug",
+                    "text": "",
                     "sceneId": "e2"
                 },                
                 {
                     "pitch": -10,
                     "yaw": 20,
                     "type": "scene",
-                    "text": "naar beneden",
+                    "text": "Naar beneden",
                     "sceneId": "e1"
                 },
                 {
