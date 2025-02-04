@@ -554,18 +554,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     "text": "",
                     "sceneId": "m1"
                 },
-                {
-                    "pitch": 10,  // Position above eye level
-                    "yaw": 0,     // Center of view
-                    "type": "info",
-                    "cssClass": "custom-hotspot",
-                    "createTooltipFunc": hotspot,
-                    "createTooltipArgs": {
-                        "title": "Mediatheek",
-                        "text": "In de mediatheek kun je boeken lenen, studeren en gebruik maken van computers voor onderzoek.",
-                        "url": "https://oscarromero.nl/ondersteuning/mediatheek/"
-                    }
-                }
             ]
         },
 
