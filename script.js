@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
         "i1": {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
-            "author": "Oscar Romero",
+            "author": "Os// 1. yawOffset: De hoek waarbij de scene naar het noorden wijstcar Romero",
             "title": "Welkom bij Oscar Romero",
             'etage': 0,
-            "yawOffset": 90, // Add yaw offset (angle to face forward)
+            "yawOffset": 90, // 1. yawOffset: De hoek waarbij de scene naar het noorden wijst
             'mapPosition': { 'x': 86, 'y': 184 },
             "hotSpots": [
                 {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
-            "yawOffset": 90, // Add yaw offset (angle to face forward)
+            "yawOffset": 90, 
             'mapPosition': { 'x': 91, 'y': 158 },
             "hotSpots": [
                 {
