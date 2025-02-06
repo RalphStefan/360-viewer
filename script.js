@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/ingang.JPG",
             "author": "Oscar Romero",
             "title": "Welkom bij Oscar Romero",
-            "infoHtml": "Welkom bij de virtuele tour van Oscar Romero. Klik op de pijlen om door de school te navigeren. <br><br><a href='https://oscarromero.nl/' target='_blank' style='color: white;'>Meer informatie →</a>",
             'etage': 0,
-
             'mapPosition': { 'x': 86, 'y': 184 },
             "hotSpots": [
                 {
@@ -512,6 +510,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "m2": {
             "type": "equirectangular",
             "panorama": "images/m2.JPG",
+            "title": "Mediatheek",
             'etage': 0, 
             'mapPosition': { 'x': 157, 'y': 98 },
             "hotSpots": [
@@ -542,6 +541,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "m3": {
             "type": "equirectangular",
             "panorama": "images/m3.JPG",
+            "title": "Mediatheek",
             'etage': 0, 
             'mapPosition': { 'x': 170, 'y': 97 },
             "hotSpots": [
@@ -558,6 +558,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "ba": {
             "type": "equirectangular",
             "panorama": "images/ba.JPG",
+            "title": "Bovenbouw aula",
             'etage': 0, 
             'mapPosition': { 'x': 158, 'y': 80 },
             "hotSpots": [
@@ -594,6 +595,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "mz": {
             "type": "equirectangular",
             "panorama": "images/mz.JPG",
+            "title": "Mandelazaal",
             'etage': 0, 
             'mapPosition': { 'x': 160, 'y': 52 },
             "hotSpots": [
@@ -668,6 +670,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "lk": {
             "type": "equirectangular",
             "panorama": "images/lk.JPG",
+            "title": "Lerarenkamer",
             'etage': 0, 
             'mapPosition': { 'x': 121, 'y': 174 },
             "hotSpots": [
@@ -683,6 +686,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "hvl": {
             "type": "equirectangular",
             "panorama": "images/hvl.JPG",
+            "title": "Handvaardigheid",
             'etage': 0, 
             'mapPosition': { 'x': 98, 'y': 98 },
             "hotSpots": [
@@ -698,6 +702,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "tuin": {
             "type": "equirectangular",
             "panorama": "images/tuin.JPG",
+            "title": "Tuin",
             'etage': 0, 
             'mapPosition': { 'x': 145, 'y': 90 },
             "hotSpots": [
@@ -713,6 +718,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "0,49": {
             "type": "equirectangular",
             "panorama": "images/0,49.JPG",
+            "title": "Leerplein",
             'etage': 0, 
             'mapPosition': { 'x':185, 'y': 35 },
             "hotSpots": [
@@ -737,6 +743,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "oba1": {
             "type": "equirectangular",
             "panorama": "images/oba1.JPG",
+            "title": "Onderbouw aula",
             'etage': 0, 
             'mapPosition': { 'x': 70, 'y': 150 },
             "hotSpots": [
@@ -767,6 +774,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "oba2": {
             "type": "equirectangular",
             "panorama": "images/oba2.JPG",
+            "title": "Onderbouw aula",
             'etage': 0, 
             'mapPosition': { 'x': 61, 'y': 150 },
             "hotSpots": [
@@ -796,6 +804,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "oba3": {
             "type": "equirectangular",
             "panorama": "images/oba3.JPG",
+            "title": "Onderbouw aula",
             'etage': 0, 
             'mapPosition': { 'x': 61, 'y': 132 },
             "hotSpots": [
@@ -833,6 +842,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "oba4": {
             "type": "equirectangular",
             "panorama": "images/oba4.JPG",
+            "title": "Onderbouw aula",
             'etage': 0, 
             'mapPosition': { 'x': 71, 'y': 133 },
             "hotSpots": [
@@ -870,6 +880,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "oba5": {
             "type": "equirectangular",
             "panorama": "images/oba5.JPG",
+            "title": "Onderbouw aula",
             'etage': 0, 
             'mapPosition': { 'x': 83, 'y': 127 },
             "hotSpots": [
@@ -900,6 +911,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "ml": {
             "type": "equirectangular",
             "panorama": "images/ml.JPG",
+            "title": "Muzieklokaal",
             'etage': 0, 
             'mapPosition': { 'x': 68, 'y':117 },
             "hotSpots": [
@@ -1013,6 +1025,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "s06": {
             "type": "equirectangular",
             "panorama": "images/s06.JPG",
+            "title": "Gymzaal S06",
             'etage': 0, 
             'mapPosition': { 'x': 25, 'y': 130 },
             "hotSpots": [
@@ -1030,6 +1043,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "s08": {
             "type": "equirectangular",
             "panorama": "images/s12.JPG",
+            "title": "Sportzaal 1(S08)",
             'etage': 3, 
             'mapPosition': { 'x': 147, 'y': 52 },
             "hotSpots": [
@@ -1046,6 +1060,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "s10": {
             "type": "equirectangular",
             "panorama": "images/s10.JPG",
+            "title": "Gymzaal S10",
             'etage': 4, 
             'mapPosition': { 'x': 75, 'y': 95 },
             "hotSpots": [
@@ -1063,6 +1078,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "s14": {
             "type": "equirectangular",
             "panorama": "images/s14.JPG",
+            "title": "Sportzaal 2(S14)",
             'etage': 5, 
             'mapPosition': { 'x': 155, 'y': 150 },
             "hotSpots": [
@@ -1080,6 +1096,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "eoba": {
             "type": "equirectangular",
             "panorama": "images/eoba.JPG",
+            "title": "Onderbouw aula",
             'etage': 1, 
             'mapPosition': { 'x': 26, 'y': 140 },
             "hotSpots": [
@@ -1242,6 +1259,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "lpv": {
             "type": "equirectangular",
             "panorama": "images/lpv.JPG",
+            "title": "Leerplein",
             'etage': 1, 
             'mapPosition': { 'x': 39, 'y': 125 },
             "hotSpots": [
@@ -1270,55 +1288,47 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
     };
-// Initialize viewer
-const viewer = pannellum.viewer('panorama', {
-    default: { 
-        firstScene: 'i1',
-        sceneFadeDuration: 1000,
-        autoLoad: true,
-        showFullscreenCtrl: true,
-        showControls: true,
-        escapeHTML: false
-    },
-    scenes: scenes,
-    strings: {
-        loadButtonLabel: "Start Tour",
-        loadingLabel: "Laden...",
-    }
-});
-
-// Add scene change handler with info update
-viewer.on('scenechange', function(sceneId) {
-    const scene = scenes[sceneId];
-    if (scene) {
-        // Update map
-        const mapImage = document.getElementById('map-image');
-        const locationIndicator = document.getElementById('location-indicator');
-        if (mapImage) {
-            const mapSrc = `plattegrond/etage_${scene.etage}.png`;
-            mapImage.src = mapSrc;
-            
-            const { x, y } = scene.mapPosition;
-            locationIndicator.style.left = `${x}px`;
-            locationIndicator.style.top = `${y}px`;
+    // Initialize viewer
+    const viewer = pannellum.viewer('panorama', {
+        default: { 
+            firstScene: 'i1',
+            sceneFadeDuration: 1000,
+            autoLoad: true,
+            showFullscreenCtrl: true,
+            showControls: true,
+            escapeHTML: false
+        },
+        scenes: scenes
+    });
+    
+    // Handle scene changes
+    window.changeScene = function(sceneId) {
+        const scene = scenes[sceneId];
+        if (scene) {
+            console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`);
+            viewer.loadScene(sceneId);
+    
+            // Update mini-map
+            const mapImage = document.getElementById('map-image');
+            const locationIndicator = document.getElementById('location-indicator');
+            if (mapImage) {
+                const mapSrc = `plattegrond/etage_${scene.etage}.png`;
+                console.log(`Changing map to: ${mapSrc}`);
+                mapImage.src = mapSrc;
+                
+                const { x, y } = scene.mapPosition;
+                locationIndicator.style.left = `${x}px`;
+                locationIndicator.style.top = `${y}px`;
+            }
         }
-
-        // Update info text if present
-        if (scene.infoHtml) {
-            viewer.setInfoHtml(scene.infoHtml);
-        }
-    }
-});
-
-// Handle initial load
-viewer.on('load', function() {
-    const currentScene = viewer.getScene();
-    const scene = scenes[currentScene];
-    if (scene && scene.infoHtml) {
-        viewer.setInfoHtml(scene.infoHtml);
-    }
-});
- 
+    };
+    
+    // Listen for scene changes
+    viewer.on('scenechange', function() {
+        const currentScene = viewer.getScene();
+        changeScene(currentScene);
+    });
+    
     // Handle initial scene from URL
     const urlParams = new URLSearchParams(window.location.search);
     const initialScene = urlParams.get('scene');
