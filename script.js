@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "author": "Os// 1. yawOffset: De hoek waarbij de scene naar het noorden wijstcar Romero",
             "title": "Welkom bij Oscar Romero",
             'etage': 0,
-            "yawOffset": -90, // 1. yawOffset: De hoek waarbij de scene naar het noorden wijst
+            "yawOffset": 0, // 1. yawOffset: De hoek waarbij de scene naar het noorden wijst
             'mapPosition': { 'x': 86, 'y': 184 },
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 0,
+                    "yaw": 90,
                     "type": "scene",
                     "text": "",
                     "sceneId": "i2",
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
-            "yawOffset": -90, 
+            "yawOffset": 0, 
             'mapPosition': { 'x': 91, 'y': 158 },
             "hotSpots": [
                 {
