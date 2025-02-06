@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b4.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 123, 'y': 130 },
+            'mapPosition': { 'x': 123, 'y': 132 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": 175,
+                    "yaw": -175,
                     "type": "scene",
                     "text": "Bovenbouw aula",
                     "sceneId": "ba"
@@ -689,7 +689,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/hvl.JPG",
             "title": "Handvaardigheid",
             'etage': 0, 
-            'mapPosition': { 'x': 98, 'y': 98 },
+            'mapPosition': { 'x': 100, 'y': 91008 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -705,7 +705,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/tuin.JPG",
             "title": "Tuin",
             'etage': 0, 
-            'mapPosition': { 'x': 145, 'y': 90 },
+            'mapPosition': { 'x': 135, 'y': 90 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1292,7 +1292,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize viewer
     const viewer = pannellum.viewer('panorama', {
         default: { 
-            firstScene: 'i1',
             sceneFadeDuration: 1000,
             autoLoad: true,
             showFullscreenCtrl: true,
