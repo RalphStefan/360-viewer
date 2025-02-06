@@ -27,13 +27,12 @@
         /* Desktop styles (default) */
         .container {
             width: var(--desktop-width);
-            height: 100vh; /* Fixed viewport height */
+            height: 600px; /* Fixed pixel height instead of viewport units */
             margin: 0 auto;
             padding: 20px;
             position: relative;
-            overflow-y: auto; /* Allow scrolling if content overflows */
+            overflow: hidden; /* Prevent any scrolling */
         }
-
         .map-container {
             max-width: 1567px;
             position: relative;
@@ -154,8 +153,9 @@
         @media (max-width: 480px) {
             .container {
                 width: var(--mobile-width);
-                height: 100vh; /* fixed positie op mobiel */
+                height: 400px; /* Fixed pixel height for mobile */
                 padding: 5px;
+                overflow: hidden; /* Prevent scrolling */
             }
 
             .map-container {
@@ -181,10 +181,10 @@
     
             /* Mobile positions */
             #gymzaal-link { top: 35%; left: 13%; }
-            #mandelazaal-link { top: 70%; left: 36%; }
+            #mandelazaal-link { top: 76%; left: 35%; }
             #muzieklokaal-link { top: 42%; left: 20%; }
-            #mediatheek-link { top: 68%; left: 22%; }
-            #handvaardigheid-link { top: 51%; left: 24%; }
+            #mediatheek-link { top: 71%; left: 23%; }
+            #handvaardigheid-link { top: 54%; left: 23%; }
             #leerplein-link { top: 51%; left: 59%; }
         }
     </style>
