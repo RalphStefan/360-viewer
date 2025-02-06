@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b7.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 168, 'y': 105 },
+            'mapPosition': { 'x': 161, 'y': 108 },
             "noordPunt": 180, 
             "hotSpots": [
                 {
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -85,
+                    "yaw": -95,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b7"
@@ -506,7 +506,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m1.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 145, 'y': 95 },
+            'mapPosition': { 'x': 150, 'y': 97 },
             "title": "Mediatheek",
             "info": "In de mediatheek kun je boeken lenen, studeren en gebruik maken van computers voor onderzoek.<br><br><a href='https://oscarromero.nl/ondersteuning/mediatheek/' target='_blank' style='color: white;'>Meer informatie →</a>",
             "hotSpots": [
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m2.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 155, 'y': 95 },
+            'mapPosition': { 'x': 155, 'y': 97 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/m3.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 165, 'y': 95 },
+            'mapPosition': { 'x': 170, 'y': 97 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -580,28 +580,28 @@ document.addEventListener('DOMContentLoaded', function() {
             'mapPosition': { 'x': 158, 'y': 80 },
             "hotSpots": [
                 {
-                    "pitch": -10,
+                    "pitch": -5,
                     "yaw": 130,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b12"
                 },
                 {
-                    "pitch": -10,
+                    "pitch": -5,
                     "yaw": -140,
                     "type": "scene",
                     "text": "",
                     "sceneId": "b9"
                 },
                 {
-                    "pitch": 5,
+                    "pitch": -5,
                     "yaw": 20,
                     "type": "scene",
                     "text": "Mediatheek",
                     "sceneId": "m2"
                 },
                 {
-                    "pitch": 0,
+                    "pitch": -5,
                     "yaw": 170,
                     "type": "scene",
                     "text": "Mandelazaal",
@@ -613,7 +613,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/mz.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 150, 'y': 45 },
+            'mapPosition': { 'x': 160, 'y': 52 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -687,7 +687,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/lk.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 119, 'y': 171 },
+            'mapPosition': { 'x': 121, 'y': 174 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -717,7 +717,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/tuin.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 250, 'y': 250 },
+            'mapPosition': { 'x': 100, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -732,7 +732,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/0,49.JPG",
             'etage': 0, 
-            'mapPosition': { 'x':180, 'y': 38 },
+            'mapPosition': { 'x':185, 'y': 35 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1189,7 +1189,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e3.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 52, 'y':158 },
+            'mapPosition': { 'x': 55, 'y':158 },
             "hotSpots": [
 
                 {
@@ -1213,7 +1213,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e4.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 49, 'y':175 },
+            'mapPosition': { 'x': 55, 'y':174 },
             "hotSpots": [
 
                 {
@@ -1237,7 +1237,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/e5.JPG",
             'etage': 1, 
-            'mapPosition': { 'x': 51, 'y':95 },
+            'mapPosition': { 'x': 56, 'y':95 },
             "hotSpots": [
 
                 {
@@ -1288,13 +1288,6 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
     };
-    // Function to calculate view direction
-    function calculateInitialYaw(fromScene, toScene, hotspotYaw) {
-        const sourceNorth = fromScene.noordPunt || 0;
-        const targetNorth = toScene.noordPunt || 0;
-        return ((hotspotYaw + sourceNorth - targetNorth) % 360 + 360) % 360;
-    }
-
     // Initialize viewer
     const viewer = pannellum.viewer('panorama', {
         default: { 
@@ -1302,22 +1295,14 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         scenes: scenes
     });
-
+    
     // Handle scene changes
-    window.changeScene = function(sceneId, sourceSceneId, hotspotYaw) {
+    window.changeScene = function(sceneId) {
         const scene = scenes[sceneId];
         if (scene) {
             console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`);
-            
-            // Calculate initial view direction if we have source info
-            if (sourceSceneId && hotspotYaw !== undefined) {
-                const sourceScene = scenes[sourceSceneId];
-                const initialYaw = calculateInitialYaw(sourceScene, scene, hotspotYaw);
-                viewer.loadScene(sceneId, null, initialYaw);
-            } else {
-                viewer.loadScene(sceneId);
-            }
-
+            viewer.loadScene(sceneId);
+    
             // Update mini-map
             const mapImage = document.getElementById('map-image');
             const locationIndicator = document.getElementById('location-indicator');
@@ -1332,13 +1317,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     };
-
+    
     // Listen for scene changes
     viewer.on('scenechange', function() {
         const currentScene = viewer.getScene();
         changeScene(currentScene);
     });
-
+    
     // Handle initial scene from URL
     const urlParams = new URLSearchParams(window.location.search);
     const initialScene = urlParams.get('scene');
@@ -1347,5 +1332,4 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Geen begin scène gedefinieerd.');
     }
-
 });
