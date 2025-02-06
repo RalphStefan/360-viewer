@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plattegrond Oscar Romero</title>
     <style>
+        :root {
+            --primary: #e41e26;
+            --primary-hover: #c41920;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --min-width: 769px;
+            --max-width: 900px;
+        }
+    
         /* Base styles */
         body, html {
             height: 100%;
+            min-width: var(--min-width);
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            overflow-x: auto;
             background-color: #f0f0f0;
         }
     
-        /* Layout containers */
+        /* Containers */
         .container {
-            max-width: 900px;
+            width: var(--max-width);
             height: 800px;
+            min-width: var(--min-width);
             margin: 0 auto;
             padding: 20px;
         }
@@ -29,43 +40,37 @@
             height: 70vh;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: var(--shadow);
             overflow: hidden;
         }
     
+        /* Absolute positioned elements */
+        .background, .map {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+    
         .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('dronebeelden/droneshot.png');
-            background-size: cover;
-            background-position: center;
+            background: url('dronebeelden/droneshot.png') center/cover;
         }
     
-        .map {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-        }
+        .map { z-index: 2; }
     
-        /* Info sections */
+        /* Info and buttons */
         .info-section {
             margin-top: 20px;
             background-color: white;
             border-radius: 8px;
             padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: var(--shadow);
         }
     
         .location-info {
             margin-bottom: 20px;
             padding: 15px;
-            border-left: 4px solid #e41e26;
+            border-left: 4px solid var(--primary);
             background-color: #f8f8f8;
             transition: transform 0.2s ease;
         }
@@ -74,7 +79,6 @@
             transform: translateX(5px);
         }
     
-        /* Button styles */
         .button-container {
             display: flex;
             justify-content: center;
@@ -83,31 +87,32 @@
         }
     
         .button {
-            background-color: #e41e26;
+            background-color: var(--primary);
             color: white;
             border: none;
             padding: 12px 24px;
             border-radius: 4px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: 0.3s;
             min-width: 150px;
         }
     
         .button:hover {
-            background-color: #c41920;
+            background-color: var(--primary-hover);
         }
     
         /* Location markers */
         .location-link {
+            --size: 5px;
             position: absolute;
-            width: 5px;
-            height: 5px;
-            background-color: #e41e26;
+            width: var(--size);
+            height: var(--size);
+            background-color: var(--primary);
             border: 2px solid white;
             border-radius: 50%;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: 0.3s;
             z-index: 3;
         }
     
@@ -116,7 +121,6 @@
             bottom: 130%;
             left: 50%;
             transform: translateX(-50%);
-            white-space: nowrap;
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 5px 10px;
@@ -124,27 +128,27 @@
             font-size: 14px;
             opacity: 0;
             visibility: hidden;
-            transition: all 0.3s ease;
+            transition: 0.3s;
+            white-space: nowrap;
         }
     
-        /* Desktop positions and hover */
-        #gymzaal-link { top: 35%; left: 15%; }
+        /* Location positions */
+        #gymzaal-link { top: 31%; left: 15%; }
         #mandelazaal-link { top: 81%; left: 37%; }
         #muzieklokaal-link { top: 40%; left: 21%; }
-        #mediatheek-link { top: 76%; left: 26%; }
-        #handvaardigheid-link { top: 53%; left: 26%; }
+        #mediatheek-link { top: 76%; left: 24%; }
+        #handvaardigheid-link { top: 53%; left: 25%; }
         #leerplein-link { top: 52%; left: 58%; }
     
+        /* Responsive */
         @media (min-width: 900px) {
             .location-link {
-                width: 15px;
-                height: 15px;
+                --size: 15px;
             }
             .location-link:hover {
                 transform: scale(1.2);
-                background-color: #c41920;
+                background-color: var(--primary-hover);
             }
-    
             .location-link:hover span {
                 opacity: 1;
                 visibility: visible;
@@ -152,39 +156,29 @@
             }
         }
     
-        /* Mobile styles */
         @media (max-width: 768px) {
             .container {
-        width: 769px;
-        height: 600px;
-        padding: 10px;
-    }
-            .location-link {
-                width: 8px;
-                height: 8px;
+                width: var(--min-width);
+                height: 600px;
+                padding: 10px;
             }
-    
+            .location-link {
+                --size: 8px;
+            }
             .location-link span {
                 opacity: 1;
                 visibility: visible;
                 transform: translateX(-50%) translateY(-5px);
                 font-size: 12px;
-                white-space: normal;
-                width: max-content;
                 max-width: 120px;
             }
-    
-            /* Mobile positions */
-            #gymzaal-link { top: 34%; left: 12%; }
-            #mandelazaal-link { top: 80%; left: 33%; }
-            #muzieklokaal-link { top: 41%; left: 20%; }
-            #mediatheek-link { top: 78%; left: 25%; }
-            #handvaardigheid-link { top: 55%; left: 25%; }
-            #leerplein-link { top: 53%; left: 64%; }
-    
-            .container { padding: 10px; }
-            .button-container { flex-direction:row}
             .button { width: 95%; }
+            #gymzaal-link { top: 34%; left: 12%; }
+            #mandelazaal-link { top: 78%; left: 38%; }
+            #muzieklokaal-link { top: 41%; left: 20%; }
+            #mediatheek-link { top: 76; left: 24%; }
+            #handvaardigheid-link { top: 53%; left: 24%; }
+            #leerplein-link { top: 52%; left: 58%; }
         }
     </style>
 </head>
