@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "pitch": -10,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "Next",
+                    "text": "",
                     "sceneId": "i2",
                 },
             ]
