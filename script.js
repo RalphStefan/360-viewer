@@ -1273,7 +1273,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize viewer
     const viewer = pannellum.viewer('panorama', {
         default: { 
-            firstScene: 'i1'
+            firstScene: 'i1',
+            sceneFadeDuration: 1000,
+            autoLoad: true,
+            showFullscreenCtrl: true,
+            showControls: true,
+            escapeHTML: false
         },
         scenes: scenes
     });
