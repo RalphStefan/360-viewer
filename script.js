@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "author": "Oscar Romero",
             "title": "Welkom bij Oscar Romero",
             'etage': 0,
-            "yawOffset": 0, // Add yaw offset (angle to face forward)
+            "yawOffset": 90, // Add yaw offset (angle to face forward)
             'mapPosition': { 'x': 86, 'y': 184 },
             "hotSpots": [
                 {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
-            "yawOffset": 180, // Add yaw offset (angle to face forward)
+            "yawOffset": 90, // Add yaw offset (angle to face forward)
             'mapPosition': { 'x': 91, 'y': 158 },
             "hotSpots": [
                 {
@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "b1": {
             "type": "equirectangular",
             "panorama": "images/b1.JPG",
+            "yawOffset": 90,
             'etage': 0, 
             'mapPosition': { 'x': 93, 'y': 151 },
             "hotSpots": [
@@ -75,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b2.JPG",
             'etage': 0, 
+            "yawOffset": 90,
             'mapPosition': { 'x': 103, 'y': 140 },
             "hotSpots": [
                 {
@@ -118,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b3.JPG",
             'etage': 0, 
+            "yawOffset": 180,
             'mapPosition': { 'x': 99, 'y': 132 },
             "hotSpots": [
                 {
@@ -161,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b4.JPG",
             'etage': 0, 
+            "yawOffset": 0,
             'mapPosition': { 'x': 123, 'y': 130 },
             "hotSpots": [
                 {
@@ -184,6 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b5.JPG",
             'etage': 0, 
+            "yawOffset": 0,
             'mapPosition': { 'x': 139, 'y': 131 }, 
             "hotSpots": [
                 {
@@ -206,6 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b6.JPG",
             'etage': 0, 
+            "yawOffset": 180,
             'mapPosition': { 'x': 146, 'y': 107 },
             "hotSpots": [
                 {
@@ -242,6 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b7.JPG",
             'etage': 0, 
+            "yawOffset": 180,
             'mapPosition': { 'x': 161, 'y': 108 },
             "hotSpots": [
                 {
@@ -264,6 +271,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b8.JPG",
             'etage': 0, 
+            "yawOffset": 90,
             "title": "Achteringang",
             'mapPosition': { 'x': 180, 'y': 106 }, 
             "hotSpots": [
@@ -287,6 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b9.JPG",
             'etage': 0, 
+            "yawOffset": 180,
             'mapPosition': { 'x': 180, 'y': 63 },
             "hotSpots": [
                 {
@@ -316,6 +325,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b10.JPG",
             'etage': 0, 
+            "yawOffset": 70,
             'mapPosition': { 'x':176, 'y': 30 },
             "hotSpots": [
                 {
@@ -345,6 +355,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b11.JPG",
             'etage': 0, 
+            "yawOffset": 150,
             'mapPosition': { 'x': 145, 'y': 45 },
             "hotSpots": [
                 {
@@ -374,6 +385,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b12.JPG",
             'etage': 0, 
+            "yawOffset": 150,
             'mapPosition': { 'x': 135, 'y': 56 },
             "hotSpots": [
                 {
@@ -403,6 +415,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b13.JPG",
             'etage': 0, 
+            "yawOffset": -30,
             'mapPosition': { 'x': 124, 'y':62 },
             "hotSpots": [
                 {
@@ -425,7 +438,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b14.JPG",
             'etage': 0, 
-            'mapPosition': { 'x': 108, 'y': 88 },
+            "yawOffset": -90,
+            'mapPosition': { 'x': 109, 'y': 89 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -461,6 +475,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b15.JPG",
             'etage': 0, 
+            "yawOffset": -90,
             'mapPosition': { 'x': 108, 'y': 121 },
             "hotSpots": [
                 {
@@ -708,7 +723,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/tuin.JPG",
             "title": "Tuin",
             'etage': 0, 
-            'mapPosition': { 'x': 145, 'y': 90 },
+            'mapPosition': { 'x': 135, 'y': 90 },
             "hotSpots": [
                 {
                     "pitch": -10,
