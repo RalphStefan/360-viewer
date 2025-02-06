@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "author": "Oscar Romero",
             "title": "Welkom bij Oscar Romero",
             'etage': 0,
+            "yawOffset": 0, // Add yaw offset (angle to face forward)
             'mapPosition': { 'x': 86, 'y': 184 },
             "hotSpots": [
                 {
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
+            "yawOffset": 180, // Add yaw offset (angle to face forward)
             'mapPosition': { 'x': 91, 'y': 158 },
             "hotSpots": [
                 {
@@ -1290,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
     };
-    // Initialize viewer
+       // Initialize viewer
     const viewer = pannellum.viewer('panorama', {
         default: { 
             firstScene: 'i1',
@@ -1322,13 +1324,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 locationIndicator.style.left = `${x}px`;
                 locationIndicator.style.top = `${y}px`;
             }
+    
+            // Set view direction using yawOffset if defined
+            if (scene.yawOffset !== undefined) {
+                viewer.setYaw(scene.yawOffset);
+            }
         }
     };
     
     // Listen for scene changes
-    viewer.on('scenechange', function() {
-        const currentScene = viewer.getScene();
-        changeScene(currentScene);
+    viewer.on('scenechange', function(sceneId) {
+        const scene = scenes[sceneId];
+        if (scene) {
+            changeScene(sceneId);
+        }
     });
     
     // Handle initial scene from URL
