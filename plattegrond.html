@@ -17,6 +17,7 @@
         /* Layout containers */
         .container {
             max-width: 900px;
+            height: 800px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -134,7 +135,7 @@
         #handvaardigheid-link { top: 53%; left: 26%; }
         #leerplein-link { top: 52%; left: 58%; }
     
-        @media (min-width: 769px) {
+        @media (min-width: 900px) {
             .location-link {
                 width: 15px;
                 height: 15px;
@@ -153,6 +154,11 @@
     
         /* Mobile styles */
         @media (max-width: 768px) {
+            .container {
+        width: 769px;
+        height: 600px;
+        padding: 10px;
+    }
             .location-link {
                 width: 8px;
                 height: 8px;
