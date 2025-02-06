@@ -689,7 +689,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/hvl.JPG",
             "title": "Handvaardigheid",
             'etage': 0, 
-            'mapPosition': { 'x': 100, 'y': 100 },
+            'mapPosition': { 'x': 102, 'y': 103 },
             "hotSpots": [
                 {
                     "pitch": -10,
