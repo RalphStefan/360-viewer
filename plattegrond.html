@@ -27,16 +27,18 @@
         /* Desktop styles (default) */
         .container {
             width: var(--desktop-width);
-            height: 800px;
+            height: 100vh; /* Fixed viewport height */
             margin: 0 auto;
             padding: 20px;
+            position: relative;
+            overflow-y: auto; /* Allow scrolling if content overflows */
         }
-    
+
         .map-container {
             max-width: 1567px;
             position: relative;
             width: 100%;
-            height: 70vh;
+            height: 70vh; /* 70% of viewport height */
             background-color: white;
             border-radius: 8px;
             box-shadow: var(--shadow);
@@ -133,8 +135,8 @@
         #gymzaal-link { top: 31%; left: 15%; }
         #mandelazaal-link { top: 81%; left: 37%; }
         #muzieklokaal-link { top: 40%; left: 21%; }
-        #mediatheek-link { top: 76%; left: 24%; }
-        #handvaardigheid-link { top: 53%; left: 25%; }
+        #mediatheek-link { top: 76%; left: 25%; }
+        #handvaardigheid-link { top: 53%; left: 24%; }
         #leerplein-link { top: 52%; left: 58%; }
     
         .location-link:hover {
@@ -152,14 +154,13 @@
         @media (max-width: 480px) {
             .container {
                 width: var(--mobile-width);
-                height: 500px;
+                height: 100vh; /* fixed positie op mobiel */
                 padding: 5px;
             }
-    
+
             .map-container {
-                height: 60vh;
+                height: 60vh; /* kleiner */
             }
-    
             .location-link {
                 --size: 6px;
             }
@@ -179,12 +180,12 @@
             }
     
             /* Mobile positions */
-            #gymzaal-link { top: 32%; left: 10%; }
-            #mandelazaal-link { top: 76%; left: 36%; }
-            #muzieklokaal-link { top: 39%; left: 18%; }
-            #mediatheek-link { top: 74%; left: 22%; }
-            #handvaardigheid-link { top: 51%; left: 22%; }
-            #leerplein-link { top: 50%; left: 56%; }
+            #gymzaal-link { top: 35%; left: 13%; }
+            #mandelazaal-link { top: 70%; left: 36%; }
+            #muzieklokaal-link { top: 42%; left: 20%; }
+            #mediatheek-link { top: 68%; left: 22%; }
+            #handvaardigheid-link { top: 51%; left: 24%; }
+            #leerplein-link { top: 51%; left: 59%; }
         }
     </style>
 </head>
