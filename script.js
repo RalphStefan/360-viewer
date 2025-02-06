@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -175,
+                    "yaw": -167,
                     "type": "scene",
                     "text": "Bovenbouw aula",
                     "sceneId": "ba"
@@ -689,7 +689,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/hvl.JPG",
             "title": "Handvaardigheid",
             'etage': 0, 
-            'mapPosition': { 'x': 100, 'y': 91008 },
+            'mapPosition': { 'x': 100, 'y': 100 },
             "hotSpots": [
                 {
                     "pitch": -10,
