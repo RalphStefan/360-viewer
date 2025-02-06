@@ -1270,47 +1270,55 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
     };
-    // Initialize viewer
-    const viewer = pannellum.viewer('panorama', {
-        default: { 
-            firstScene: 'i1',
-            sceneFadeDuration: 1000,
-            autoLoad: true,
-            showFullscreenCtrl: true,
-            showControls: true,
-            escapeHTML: false
-        },
-        scenes: scenes
-    });
-    
-    // Handle scene changes
-    window.changeScene = function(sceneId) {
-        const scene = scenes[sceneId];
-        if (scene) {
-            console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`);
-            viewer.loadScene(sceneId);
-    
-            // Update mini-map
-            const mapImage = document.getElementById('map-image');
-            const locationIndicator = document.getElementById('location-indicator');
-            if (mapImage) {
-                const mapSrc = `plattegrond/etage_${scene.etage}.png`;
-                console.log(`Changing map to: ${mapSrc}`);
-                mapImage.src = mapSrc;
-                
-                const { x, y } = scene.mapPosition;
-                locationIndicator.style.left = `${x}px`;
-                locationIndicator.style.top = `${y}px`;
-            }
+// Initialize viewer
+const viewer = pannellum.viewer('panorama', {
+    default: { 
+        firstScene: 'i1',
+        sceneFadeDuration: 1000,
+        autoLoad: true,
+        showFullscreenCtrl: true,
+        showControls: true,
+        escapeHTML: false
+    },
+    scenes: scenes,
+    strings: {
+        loadButtonLabel: "Start Tour",
+        loadingLabel: "Laden...",
+    }
+});
+
+// Add scene change handler with info update
+viewer.on('scenechange', function(sceneId) {
+    const scene = scenes[sceneId];
+    if (scene) {
+        // Update map
+        const mapImage = document.getElementById('map-image');
+        const locationIndicator = document.getElementById('location-indicator');
+        if (mapImage) {
+            const mapSrc = `plattegrond/etage_${scene.etage}.png`;
+            mapImage.src = mapSrc;
+            
+            const { x, y } = scene.mapPosition;
+            locationIndicator.style.left = `${x}px`;
+            locationIndicator.style.top = `${y}px`;
         }
-    };
-    
-    // Listen for scene changes
-    viewer.on('scenechange', function() {
-        const currentScene = viewer.getScene();
-        changeScene(currentScene);
-    });
-    
+
+        // Update info text if present
+        if (scene.infoHtml) {
+            viewer.setInfoHtml(scene.infoHtml);
+        }
+    }
+});
+
+// Handle initial load
+viewer.on('load', function() {
+    const currentScene = viewer.getScene();
+    const scene = scenes[currentScene];
+    if (scene && scene.infoHtml) {
+        viewer.setInfoHtml(scene.infoHtml);
+    }
+});
+ 
     // Handle initial scene from URL
     const urlParams = new URLSearchParams(window.location.search);
     const initialScene = urlParams.get('scene');
