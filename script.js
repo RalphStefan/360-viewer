@@ -1307,7 +1307,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
     };
-       // Initialize viewer
+      // Initialize viewer
     const viewer = pannellum.viewer('panorama', {
         default: { 
             sceneFadeDuration: 1000,
@@ -1319,12 +1319,25 @@ document.addEventListener('DOMContentLoaded', function() {
         scenes: scenes
     });
     
+    // Track which hotspot was clicked
+    let lastHotspotYaw = 0;
+    viewer.on('click', function(e) {
+        if (e.target.classList.contains('pnlm-hotspot')) {
+            lastHotspotYaw = e.yaw;
+        }
+    });
+    
     // Handle scene changes
     window.changeScene = function(sceneId) {
         const scene = scenes[sceneId];
         if (scene) {
             console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`);
             viewer.loadScene(sceneId);
+    
+            // Calculate new view direction based on north reference + travel direction
+            const hotspotYaw = lastHotspotYaw || 0;
+            const newYaw = (scene.yawOffset + hotspotYaw) % 360;
+            viewer.setYaw(newYaw);
     
             // Update mini-map
             const mapImage = document.getElementById('map-image');
@@ -1337,11 +1350,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const { x, y } = scene.mapPosition;
                 locationIndicator.style.left = `${x}px`;
                 locationIndicator.style.top = `${y}px`;
-            }
-    
-            // Set view direction using yawOffset if defined
-            if (scene.yawOffset !== undefined) {
-                viewer.setYaw(scene.yawOffset);
             }
         }
     };
