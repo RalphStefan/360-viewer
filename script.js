@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
         "i1": {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
-            "author": "Welkom bij Oscar Romero",
-            "title": "Ingang",
-            "infohtml": "Welkom bij de virtuele tour van Oscar Romero. Klik op de pijlen om door de school te navigeren. <br><br><a href='https://oscarromero.nl/' target='_blank' style='color: white;'>Meer informatie →</a>",
+            "author": "Oscar Romero",
+            "title": "Welkom bij Oscar Romero",
+            "infoHtml": "Welkom bij de virtuele tour van Oscar Romero. Klik op de pijlen om door de school te navigeren. <br><br><a href='https://oscarromero.nl/' target='_blank' style='color: white;'>Meer informatie →</a>",
             'etage': 0,
 
             'mapPosition': { 'x': 86, 'y': 184 },
