@@ -4,15 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
         "i1": {
             "type": "equirectangular",
             "panorama": "images/ingang.JPG",
-            "author": "Os// 1. yawOffset: De hoek waarbij de scene naar het noorden wijstcar Romero",
             "title": "Welkom bij Oscar Romero",
             'etage': 0,
-            "yawOffset": 0, // 1. yawOffset: De hoek waarbij de scene naar het noorden wijst
             'mapPosition': { 'x': 86, 'y': 184 },
             "hotSpots": [
                 {
                     "pitch": -10,
-                    "yaw": 90,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "",
                     "sceneId": "i2",
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/ingang2.JPG",
             'etage': 0, 
-            "yawOffset": 0, 
             'mapPosition': { 'x': 91, 'y': 158 },
             "hotSpots": [
                 {
@@ -45,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         "b1": {
             "type": "equirectangular",
             "panorama": "images/b1.JPG",
-            "yawOffset": -90,
             'etage': 0, 
             'mapPosition': { 'x': 93, 'y': 151 },
             "hotSpots": [
@@ -76,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b2.JPG",
             'etage': 0, 
-            "yawOffset": -90,
             'mapPosition': { 'x': 103, 'y': 140 },
             "hotSpots": [
                 {
@@ -120,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b3.JPG",
             'etage': 0, 
-            "yawOffset": 180,
             'mapPosition': { 'x': 99, 'y': 132 },
             "hotSpots": [
                 {
@@ -164,7 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b4.JPG",
             'etage': 0, 
-            "yawOffset": 0,
             'mapPosition': { 'x': 123, 'y': 130 },
             "hotSpots": [
                 {
@@ -188,7 +181,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b5.JPG",
             'etage': 0, 
-            "yawOffset": 0,
             'mapPosition': { 'x': 139, 'y': 131 }, 
             "hotSpots": [
                 {
@@ -211,7 +203,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b6.JPG",
             'etage': 0, 
-            "yawOffset": 180,
             'mapPosition': { 'x': 146, 'y': 107 },
             "hotSpots": [
                 {
@@ -248,7 +239,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b7.JPG",
             'etage': 0, 
-            "yawOffset": 180,
             'mapPosition': { 'x': 161, 'y': 108 },
             "hotSpots": [
                 {
@@ -271,7 +261,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b8.JPG",
             'etage': 0, 
-            "yawOffset": 90,
             "title": "Achteringang",
             'mapPosition': { 'x': 180, 'y': 106 }, 
             "hotSpots": [
@@ -295,7 +284,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b9.JPG",
             'etage': 0, 
-            "yawOffset": 180,
             'mapPosition': { 'x': 180, 'y': 63 },
             "hotSpots": [
                 {
@@ -325,7 +313,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b10.JPG",
             'etage': 0, 
-            "yawOffset": 70,
             'mapPosition': { 'x':176, 'y': 30 },
             "hotSpots": [
                 {
@@ -355,7 +342,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b11.JPG",
             'etage': 0, 
-            "yawOffset": 150,
             'mapPosition': { 'x': 145, 'y': 45 },
             "hotSpots": [
                 {
@@ -385,7 +371,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b12.JPG",
             'etage': 0, 
-            "yawOffset": 150,
             'mapPosition': { 'x': 135, 'y': 56 },
             "hotSpots": [
                 {
@@ -415,7 +400,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b13.JPG",
             'etage': 0, 
-            "yawOffset": -30,
             'mapPosition': { 'x': 124, 'y':62 },
             "hotSpots": [
                 {
@@ -438,8 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b14.JPG",
             'etage': 0, 
-            "yawOffset": -90,
-            'mapPosition': { 'x': 109, 'y': 89 },
+            'mapPosition': { 'x': 108, 'y': 88 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -475,7 +458,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "equirectangular",
             "panorama": "images/b15.JPG",
             'etage': 0, 
-            "yawOffset": -90,
             'mapPosition': { 'x': 108, 'y': 121 },
             "hotSpots": [
                 {
@@ -723,7 +705,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "panorama": "images/tuin.JPG",
             "title": "Tuin",
             'etage': 0, 
-            'mapPosition': { 'x': 135, 'y': 90 },
+            'mapPosition': { 'x': 145, 'y': 90 },
             "hotSpots": [
                 {
                     "pitch": -10,
@@ -1307,9 +1289,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
     };
-      // Initialize viewer
+    // Initialize viewer
     const viewer = pannellum.viewer('panorama', {
         default: { 
+            firstScene: 'i1',
             sceneFadeDuration: 1000,
             autoLoad: true,
             showFullscreenCtrl: true,
@@ -1319,25 +1302,12 @@ document.addEventListener('DOMContentLoaded', function() {
         scenes: scenes
     });
     
-    // Track which hotspot was clicked
-    let lastHotspotYaw = 0;
-    viewer.on('click', function(e) {
-        if (e.target.classList.contains('pnlm-hotspot')) {
-            lastHotspotYaw = e.yaw;
-        }
-    });
-    
     // Handle scene changes
     window.changeScene = function(sceneId) {
         const scene = scenes[sceneId];
         if (scene) {
             console.log(`Changing to scene: ${sceneId}, Etage: ${scene.etage}`);
             viewer.loadScene(sceneId);
-    
-            // Calculate new view direction based on north reference + travel direction
-            const hotspotYaw = lastHotspotYaw || 0;
-            const newYaw = (scene.yawOffset + hotspotYaw) % 360;
-            viewer.setYaw(newYaw);
     
             // Update mini-map
             const mapImage = document.getElementById('map-image');
@@ -1355,11 +1325,9 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     // Listen for scene changes
-    viewer.on('scenechange', function(sceneId) {
-        const scene = scenes[sceneId];
-        if (scene) {
-            changeScene(sceneId);
-        }
+    viewer.on('scenechange', function() {
+        const currentScene = viewer.getScene();
+        changeScene(currentScene);
     });
     
     // Handle initial scene from URL
